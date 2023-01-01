@@ -1,0 +1,127 @@
+# cache:
+#   paths:
+#   - node_modules/
+
+stages:
+  - test
+  - prepare
+  - test-ui
+  - clean-up
+  - publish
+
+test_code:
+  image: node:18
+  stage: test
+  script:
+   - cd server
+   - npm install
+   - npm run testSrc
+  artifacts:
+    when: always
+    paths:
+      - testOutput/coverage/lcov-report
+    reports:
+      junit:
+        - testOutput/junit.xml
+    expire_in: 4 week
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/
+  tags:
+    - docker
+  only:
+     - tags
+
+test_vue_unit:
+  image: node:18
+  stage: test
+  script:
+   - cd ui
+   - npm install
+   - npm run test:unit
+  artifacts:
+    when: always
+    paths:
+      - testOutput/coverage/lcov-report
+    reports:
+      junit:
+        - testOutput/junit.xml
+    expire_in: 4 week
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/
+  tags:
+    - docker
+  only:
+     - tags
+
+copy_coverage:
+  stage: prepare
+  script:
+    - rm -rf /var/shared/nginx/html/test-basicApp/*
+    - cd server
+    - cp -R testOutput/coverage /var/shared/nginx/html/test-basicApp
+  tags:
+    - shell
+  only:
+     - tags
+
+prepareServer:
+  stage: prepare
+  script:
+    - docker create --name test-basicAppServer -p 33339:3000 --network felss_bridge basic-app:latest
+    - docker cp . test-basicAppServer:/usr/src/app
+    - docker start test-basicAppServer
+  tags:
+    - shell
+  only:
+     - tags
+
+test-ui:
+  image: buildkite/puppeteer:9.1.1
+  stage: test-ui
+  script:
+   - cd ui
+   - npm install -g npm@8.19.2
+   - npm install
+   - npm run testUi
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/
+  artifacts:
+    when: always
+    paths:
+      - testOutput/testUi
+    reports:
+      junit:
+        - testOutput/junit.xml
+    expire_in: 4 week
+  tags:
+    - docker
+  only:
+     - tags
+
+remove_container:
+  stage: clean-up
+  script:
+    - docker stop test-basicAppServer
+    - docker container rm -v test-basicAppServer
+  tags:
+    - shell
+  only:
+     - tags
+
+copy_screenshot:
+  stage: clean-up
+  script:
+    - mkdir /var/shared/nginx/html/test-basicApp/testUi
+    - mkdir /var/shared/nginx/html/test-basicApp/testUi/screenshots
+    - cp ui/testOutput/testUi/screenshots/* /var/shared/nginx/html/test-basicApp/testUi/screenshots/
+  tags:
+    - shell
+  only:
+     - tags
+
+publish_module:
+  image: node:18
+  stage: publish
+  script:
+    - npm publish
+  tags:
+    - docker
+  only:
+     - non

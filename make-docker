@@ -1,0 +1,17 @@
+#!/bin/bash
+
+version=1.0.0
+dockername=basic-app
+
+echo erstelle Docker $dockername:$version
+echo
+
+#npm install
+
+#docker build --no-cache --network host --tag $dockername:$version --tag felss/appcore:latest .
+docker build --network host --tag $dockername:$version --tag $dockername:latest .
+
+docker save $dockername:latest | gzip > basic-app_$version.tar.gz
+
+echo dockerfile basic-app_$version.tar.gz gespeichert
+

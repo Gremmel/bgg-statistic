@@ -1,0 +1,32 @@
+{
+  "global": {
+    "mqtt": {
+      "address": "10.254.10.7",
+      "port": "1885"
+    },
+    "cluServer": {
+      "url": "http://10.254.10.7:3210"
+    },
+    "basicSoftware": {
+      "httpPort": 3001
+    }
+  },
+  "influxDb": {
+    "address": "10.254.10.7",
+    "tcpPort": 8086,
+    "udpPort": 8089
+  },
+  "moduls": [
+    {
+      "description": "basic_frame",
+      "config": {
+        "port": 33335,
+        "vuejsDev": true
+      }
+    },
+    {
+      "description": "empty_modul",
+      "devPath": "/home/swe/prog/appcore-modules/empty-modul"
+    }
+  ]
+}

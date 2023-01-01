@@ -1,0 +1,5 @@
+{"startTime":"2022-12-08T17:26:08.628Z","categoryName":"default","data":["start in AppHeader"],"level":"INFO","functionName":"Object.start","fileName":"/home/swe/prog/basic-app/server/lib/viewController/AppHeader.js:9","lineNumber":9},
+{"startTime":"2022-12-08T17:31:14.140Z","categoryName":"default","data":["start in AppHeader"],"level":"INFO","functionName":"Object.start","fileName":"/home/swe/prog/basic-app/server/lib/viewController/AppHeader.js:9","lineNumber":9},
+{"startTime":"2022-12-08T17:31:43.429Z","categoryName":"default","data":["start in AppHeader"],"level":"INFO","functionName":"Object.start","fileName":"/home/swe/prog/basic-app/server/lib/viewController/AppHeader.js:9","lineNumber":9},
+{"startTime":"2022-12-08T17:32:09.861Z","categoryName":"default","data":["start in AppHeader"],"level":"INFO","functionName":"Object.start","fileName":"/home/swe/prog/basic-app/server/lib/viewController/AppHeader.js:9","lineNumber":9},
+{"startTime":"2022-12-09T11:31:16.242Z","categoryName":"default","data":["start in AppHeader"],"level":"INFO","functionName":"Object.start","fileName":"/home/swe/prog/basic-app/server/lib/vueController/AppHeader.js:9","lineNumber":9},

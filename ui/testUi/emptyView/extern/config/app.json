@@ -1,0 +1,40 @@
+{
+  "global": {},
+  "moduls": [
+    {
+      "name": "basic-frame",
+      "description": "basic_frame",
+      "config": {
+        "port": 3000,
+        "title": "AppCore",
+        "defaultLocale": "de",
+        "vuejsDev": false,
+        "urls": {
+          "header": "",
+          "logo": "http://${currentHostname}:3001",
+          "e40": "http://${currentHostname}:3001"
+        },
+        "additionalSignals": {}
+      },
+      "id": "54004f56-300c-11ec-85b3-cfab84ddf7bd"
+    },
+    {
+      "name": "empty-modul",
+      "devPath": "/usr/src/app/emptyModulDev",
+      "description": "empty_modul",
+      "config": {
+      }
+    }
+  ],
+  "syncFunctions": [],
+  "connections": [
+    {
+      "comment": "Seite Laden wenn Websocketverbindung steht",
+      "sigModulDescription": "basic_frame",
+      "sigName": "basicframeClientWsReady",
+      "slotModulDescription": "empty_modul",
+      "slotName": "slotGetEmptyModule",
+      "active": true
+    }
+  ]
+}
