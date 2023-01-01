@@ -1,0 +1,651 @@
+{
+  "games": {
+    "1117": {
+      "name": "You&#039;re Bluffing!",
+      "objecttype": "thing",
+      "objectid": "1117",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "25669": {
+      "name": "Qwirkle",
+      "objecttype": "thing",
+      "objectid": "25669",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "38453": {
+      "name": "Space Alert",
+      "objecttype": "thing",
+      "objectid": "38453",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "45315": {
+      "name": "Dungeon Lords",
+      "objecttype": "thing",
+      "objectid": "45315",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "56786": {
+      "name": "Kuhhandel Master",
+      "objecttype": "thing",
+      "objectid": "56786",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "62219": {
+      "name": "Dominant Species",
+      "objecttype": "thing",
+      "objectid": "62219",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "118048": {
+      "name": "Targi",
+      "objecttype": "thing",
+      "objectid": "118048",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "120677": {
+      "name": "Terra Mystica",
+      "objecttype": "thing",
+      "objectid": "120677",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "130592": {
+      "name": "Clue",
+      "objecttype": "thing",
+      "objectid": "130592",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "132531": {
+      "name": "Roll for the Galaxy",
+      "objecttype": "thing",
+      "objectid": "132531",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "155821": {
+      "name": "Inis",
+      "objecttype": "thing",
+      "objectid": "155821",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "161970": {
+      "name": "Alchemists",
+      "objecttype": "thing",
+      "objectid": "161970",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "177478": {
+      "name": "IKI",
+      "objecttype": "thing",
+      "objectid": "177478",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "183394": {
+      "name": "Viticulture Essential Edition",
+      "objecttype": "thing",
+      "objectid": "183394",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgamecompilation"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "185343": {
+      "name": "Anachrony",
+      "objecttype": "thing",
+      "objectid": "185343",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "194387": {
+      "name": "DREIst!",
+      "objecttype": "thing",
+      "objectid": "194387",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "227224": {
+      "name": "The Red Cathedral",
+      "objecttype": "thing",
+      "objectid": "227224",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "237179": {
+      "name": "Weather Machine",
+      "objecttype": "thing",
+      "objectid": "237179",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "239464": {
+      "name": "Palm Island",
+      "objecttype": "thing",
+      "objectid": "239464",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "243430": {
+      "name": "Dealt!",
+      "objecttype": "thing",
+      "objectid": "243430",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "247763": {
+      "name": "Underwater Cities",
+      "objecttype": "thing",
+      "objectid": "247763",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "266192": {
+      "name": "Wingspan",
+      "objecttype": "thing",
+      "objectid": "266192",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "271324": {
+      "name": "It&#039;s a Wonderful World",
+      "objecttype": "thing",
+      "objectid": "271324",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "277458": {
+      "name": "Kluster",
+      "objecttype": "thing",
+      "objectid": "277458",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "284936": {
+      "name": "Café",
+      "objecttype": "thing",
+      "objectid": "284936",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "295607": {
+      "name": "Canopy",
+      "objecttype": "thing",
+      "objectid": "295607",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "297129": {
+      "name": "Jekyll vs. Hyde",
+      "objecttype": "thing",
+      "objectid": "297129",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "298383": {
+      "name": "Golem",
+      "objecttype": "thing",
+      "objectid": "298383",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "305682": {
+      "name": "Rolling Realms",
+      "objecttype": "thing",
+      "objectid": "305682",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "306040": {
+      "name": "Merv: The Heart of the Silk Road",
+      "objecttype": "thing",
+      "objectid": "306040",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "306735": {
+      "name": "Under Falling Skies",
+      "objecttype": "thing",
+      "objectid": "306735",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "307656": {
+      "name": "Seastead",
+      "objecttype": "thing",
+      "objectid": "307656",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "310873": {
+      "name": "Carnegie",
+      "objecttype": "thing",
+      "objectid": "310873",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "312484": {
+      "name": "Lost Ruins of Arnak",
+      "objecttype": "thing",
+      "objectid": "312484",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "316554": {
+      "name": "Dune: Imperium",
+      "objecttype": "thing",
+      "objectid": "316554",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "317985": {
+      "name": "Beyond the Sun",
+      "objecttype": "thing",
+      "objectid": "317985",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "322623": {
+      "name": "Clockworker",
+      "objecttype": "thing",
+      "objectid": "322623",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "325022": {
+      "name": "Coffee Traders",
+      "objecttype": "thing",
+      "objectid": "325022",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "329082": {
+      "name": "Radlands",
+      "objecttype": "thing",
+      "objectid": "329082",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "329839": {
+      "name": "So Clover!",
+      "objecttype": "thing",
+      "objectid": "329839",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "330036": {
+      "name": "Great Plains",
+      "objecttype": "thing",
+      "objectid": "330036",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "331265": {
+      "name": "Port Royal: Big Box",
+      "objecttype": "thing",
+      "objectid": "331265",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgamecompilation"
+          }
+        ]
+      }
+    },
+    "332772": {
+      "name": "Revive",
+      "objecttype": "thing",
+      "objectid": "332772",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "339958": {
+      "name": "Gutenberg",
+      "objecttype": "thing",
+      "objectid": "339958",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "341169": {
+      "name": "Great Western Trail (Second Edition)",
+      "objecttype": "thing",
+      "objectid": "341169",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "342942": {
+      "name": "Ark Nova",
+      "objecttype": "thing",
+      "objectid": "342942",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "345584": {
+      "name": "Mindbug: First Contact",
+      "objecttype": "thing",
+      "objectid": "345584",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "346501": {
+      "name": "Mille Fiori",
+      "objecttype": "thing",
+      "objectid": "346501",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "350458": {
+      "name": "Terracotta Army",
+      "objecttype": "thing",
+      "objectid": "350458",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "351913": {
+      "name": "Tiletum",
+      "objecttype": "thing",
+      "objectid": "351913",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "360951": {
+      "name": "Catherine: The Cities of the Tsarina",
+      "objecttype": "thing",
+      "objectid": "360951",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "361545": {
+      "name": "Twilight Inscription",
+      "objecttype": "thing",
+      "objectid": "361545",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "363699": {
+      "name": "Finding Atlantis",
+      "objecttype": "thing",
+      "objectid": "363699",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "367351": {
+      "name": "Planet B",
+      "objecttype": "thing",
+      "objectid": "367351",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    }
+  },
+  "players": {
+    "gremmel": {
+      "name": "Gremmel",
+      "id": "2587291"
+    },
+    "wera": {
+      "name": "Wera",
+      "id": "0"
+    },
+    "salome": {
+      "name": "Salome",
+      "id": "0"
+    },
+    "sofie": {
+      "name": "Sofie",
+      "id": "0"
+    },
+    "heidi": {
+      "name": "Heidi",
+      "id": "0"
+    },
+    "neill": {
+      "name": "Neill",
+      "id": "0"
+    },
+    "albert": {
+      "name": "Albert",
+      "id": "0"
+    },
+    "wally": {
+      "name": "Wally",
+      "id": "0"
+    },
+    "bettina": {
+      "name": "Bettina",
+      "id": "0"
+    },
+    "finn": {
+      "name": "Finn",
+      "id": "0"
+    },
+    "ki": {
+      "name": "KI",
+      "id": "0"
+    },
+    "anonymous player": {
+      "name": "Anonymous player",
+      "id": "0"
+    },
+    "christian": {
+      "name": "Christian",
+      "id": "0"
+    }
+  }
+}

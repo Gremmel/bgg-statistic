@@ -1,0 +1,5007 @@
+{
+  "username": "gismo42",
+  "userid": "2587291",
+  "total": "396",
+  "page": "1",
+  "termsofuse": "https://boardgamegeek.com/xmlapi/termsofuse",
+  "play": [
+    {
+      "id": "67316233",
+      "date": "2023-01-01",
+      "quantity": "1",
+      "length": "104",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Revive",
+        "objecttype": "thing",
+        "objectid": "332772",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "80",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "81",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "67189316",
+      "date": "2022-12-30",
+      "quantity": "1",
+      "length": "204",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Ark Nova",
+        "objecttype": "thing",
+        "objectid": "342942",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "Schwarz",
+            "score": "14",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "null",
+            "color": "Rot",
+            "score": "20",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "67144132",
+      "date": "2022-12-29",
+      "quantity": "1",
+      "length": "24",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mindbug: First Contact",
+        "objecttype": "thing",
+        "objectid": "345584",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Salome",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "67088193",
+      "date": "2022-12-28",
+      "quantity": "1",
+      "length": "147",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Coffee Traders",
+        "objecttype": "thing",
+        "objectid": "325022",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "151",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "126",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "67055602",
+      "date": "2022-12-27",
+      "quantity": "1",
+      "length": "180",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Terracotta Army",
+        "objecttype": "thing",
+        "objectid": "350458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Blau",
+            "score": "261",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "251",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66982115",
+      "date": "2022-12-26",
+      "quantity": "1",
+      "length": "98",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Revive",
+        "objecttype": "thing",
+        "objectid": "332772",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "Gremmel als erstes Volk ausgesucht",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "84",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "Grün",
+            "score": "74",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66933219",
+      "date": "2022-12-25",
+      "quantity": "1",
+      "length": "226",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Coffee Traders",
+        "objecttype": "thing",
+        "objectid": "325022",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "154",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "start player",
+            "color": "Grün",
+            "score": "138",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66887306",
+      "date": "2022-12-24",
+      "quantity": "1",
+      "length": "28",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Radlands",
+        "objecttype": "thing",
+        "objectid": "329082",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66865599",
+      "date": "2022-12-23",
+      "quantity": "1",
+      "length": "81",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Board Game Arena",
+      "item": {
+        "name": "Roll for the Galaxy",
+        "objecttype": "thing",
+        "objectid": "132531",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "55",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Heidi",
+            "startposition": "",
+            "color": "",
+            "score": "15",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Neill",
+            "startposition": "",
+            "color": "",
+            "score": "27",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "40",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66826545",
+      "date": "2022-12-22",
+      "quantity": "1",
+      "length": "83",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Radlands",
+        "objecttype": "thing",
+        "objectid": "329082",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66796291",
+      "date": "2022-12-21",
+      "quantity": "1",
+      "length": "39",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Clockworker",
+        "objecttype": "thing",
+        "objectid": "322623",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "48",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "44",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66780666",
+      "date": "2022-12-21",
+      "quantity": "1",
+      "length": "8",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mindbug: First Contact",
+        "objecttype": "thing",
+        "objectid": "345584",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66768652",
+      "date": "2022-12-20",
+      "quantity": "1",
+      "length": "134",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Revive",
+        "objecttype": "thing",
+        "objectid": "332772",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "wera hat als erstes Volk ausgesucht",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "94",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "90",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66736315",
+      "date": "2022-12-19",
+      "quantity": "1",
+      "length": "13",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mindbug: First Contact",
+        "objecttype": "thing",
+        "objectid": "345584",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66695106",
+      "date": "2022-12-18",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Kluster",
+        "objecttype": "thing",
+        "objectid": "277458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66715807",
+      "date": "2022-12-18",
+      "quantity": "1",
+      "length": "111",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Merv: The Heart of the Silk Road",
+        "objecttype": "thing",
+        "objectid": "306040",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "72",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "Grün",
+            "score": "60",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66700027",
+      "date": "2022-12-18",
+      "quantity": "1",
+      "length": "10",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mindbug: First Contact",
+        "objecttype": "thing",
+        "objectid": "345584",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66700528",
+      "date": "2022-12-18",
+      "quantity": "1",
+      "length": "20",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mindbug: First Contact",
+        "objecttype": "thing",
+        "objectid": "345584",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66716346",
+      "date": "2022-12-18",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Qwirkle",
+        "objecttype": "thing",
+        "objectid": "25669",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Albert",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wally",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66657131",
+      "date": "2022-12-17",
+      "quantity": "1",
+      "length": "44",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Clockworker",
+        "objecttype": "thing",
+        "objectid": "322623",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "41",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "",
+            "score": "34",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66654934",
+      "date": "2022-12-17",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Kluster",
+        "objecttype": "thing",
+        "objectid": "277458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66644378",
+      "date": "2022-12-16",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Kluster",
+        "objecttype": "thing",
+        "objectid": "277458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66641211",
+      "date": "2022-12-16",
+      "quantity": "1",
+      "length": "116",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Revive",
+        "objecttype": "thing",
+        "objectid": "332772",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "62",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "start player",
+            "color": "Grün",
+            "score": "59",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66644384",
+      "date": "2022-12-15",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Kluster",
+        "objecttype": "thing",
+        "objectid": "277458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66644390",
+      "date": "2022-12-15",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Kluster",
+        "objecttype": "thing",
+        "objectid": "277458",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66593261",
+      "date": "2022-12-14",
+      "quantity": "1",
+      "length": "79",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Targi",
+        "objecttype": "thing",
+        "objectid": "118048",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Weiß",
+            "score": "38",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Blau",
+            "score": "41",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66575861",
+      "date": "2022-12-13",
+      "quantity": "1",
+      "length": "40",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Café",
+        "objecttype": "thing",
+        "objectid": "284936",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Cafe de Angola",
+            "score": "21",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "start player",
+            "color": "Cafe do Brasil",
+            "score": "17",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66522916",
+      "date": "2022-12-11",
+      "quantity": "1",
+      "length": "149",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Alchemists",
+        "objecttype": "thing",
+        "objectid": "161970",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "Blau",
+            "score": "45",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "null",
+            "color": "Grün",
+            "score": "28",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66507206",
+      "date": "2022-12-11",
+      "quantity": "1",
+      "length": "86",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Targi",
+        "objecttype": "thing",
+        "objectid": "118048",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Blau",
+            "score": "47",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "Weiß",
+            "score": "38",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66470873",
+      "date": "2022-12-10",
+      "quantity": "1",
+      "length": "19",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Jekyll vs. Hyde",
+        "objecttype": "thing",
+        "objectid": "297129",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "Hyde",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "null",
+            "color": "Jekyll",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66471130",
+      "date": "2022-12-10",
+      "quantity": "1",
+      "length": "16",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Jekyll vs. Hyde",
+        "objecttype": "thing",
+        "objectid": "297129",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "Jekyll",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "null",
+            "color": "Hyde",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66432011",
+      "date": "2022-12-08",
+      "quantity": "1",
+      "length": "53",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Radlands",
+        "objecttype": "thing",
+        "objectid": "329082",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66391862",
+      "date": "2022-12-06",
+      "quantity": "1",
+      "length": "131",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Golem",
+        "objecttype": "thing",
+        "objectid": "298383",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "wegen grobem Regelfehler abgebrochen und nicht gewertet",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Türkis",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66371630",
+      "date": "2022-12-05",
+      "quantity": "1",
+      "length": "50",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Radlands",
+        "objecttype": "thing",
+        "objectid": "329082",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66337642",
+      "date": "2022-12-04",
+      "quantity": "1",
+      "length": "30",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Qwirkle",
+        "objecttype": "thing",
+        "objectid": "25669",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Albert",
+            "startposition": "",
+            "color": "",
+            "score": "90",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "117",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wally",
+            "startposition": "",
+            "color": "",
+            "score": "79",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "97",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66345720",
+      "date": "2022-12-04",
+      "quantity": "1",
+      "length": "53",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Radlands",
+        "objecttype": "thing",
+        "objectid": "329082",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66303743",
+      "date": "2022-12-03",
+      "quantity": "1",
+      "length": "15",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "DREIst!",
+        "objecttype": "thing",
+        "objectid": "194387",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "null",
+            "color": "",
+            "score": "0",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "null",
+            "color": "",
+            "score": "1",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "",
+            "score": "3",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "null",
+            "color": "",
+            "score": "2",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66304517",
+      "date": "2022-12-03",
+      "quantity": "1",
+      "length": "16",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "DREIst!",
+        "objecttype": "thing",
+        "objectid": "194387",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "null",
+            "color": "",
+            "score": "0",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "null",
+            "color": "",
+            "score": "1",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "",
+            "score": "2",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "null",
+            "color": "",
+            "score": "3",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66301593",
+      "date": "2022-12-03",
+      "quantity": "1",
+      "length": "158",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "Lost Ruins of Arnak",
+        "objecttype": "thing",
+        "objectid": "312484",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "Played with expansions:\n- [thing=341254]Die verlorenen Ruinen von Arnak: Die Expeditionsleiter[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "start player",
+            "color": "",
+            "score": "47",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "",
+            "color": "",
+            "score": "63",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "59",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "66",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66271886",
+      "date": "2022-12-02",
+      "quantity": "1",
+      "length": "208",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Weather Machine",
+        "objecttype": "thing",
+        "objectid": "237179",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Schwarz",
+            "score": "94",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Lila",
+            "score": "96",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66221244",
+      "date": "2022-11-30",
+      "quantity": "1",
+      "length": "56",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Catherine: The Cities of the Tsarina",
+        "objecttype": "thing",
+        "objectid": "360951",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "84",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "68",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66220924",
+      "date": "2022-11-30",
+      "quantity": "1",
+      "length": "40",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Mille Fiori",
+        "objecttype": "thing",
+        "objectid": "346501",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "138",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "start player",
+            "color": "",
+            "score": "77",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66104422",
+      "date": "2022-11-26",
+      "quantity": "1",
+      "length": "175",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Tiletum",
+        "objecttype": "thing",
+        "objectid": "351913",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "Pink",
+            "score": "173",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "170",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66045690",
+      "date": "2022-11-24",
+      "quantity": "1",
+      "length": "60",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "The Red Cathedral",
+        "objecttype": "thing",
+        "objectid": "227224",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "33",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "KI",
+            "startposition": "1",
+            "color": "",
+            "score": "38",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66020798",
+      "date": "2022-11-23",
+      "quantity": "1",
+      "length": "150",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Twilight Inscription",
+        "objecttype": "thing",
+        "objectid": "361545",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "68",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "89",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "66002945",
+      "date": "2022-11-22",
+      "quantity": "1",
+      "length": "111",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Underwater Cities",
+        "objecttype": "thing",
+        "objectid": "247763",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "nach zweiter produktionsphase abgebrochen",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "37",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "1",
+            "color": "",
+            "score": "37",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65974989",
+      "date": "2022-11-21",
+      "quantity": "1",
+      "length": "139",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Underwater Cities",
+        "objecttype": "thing",
+        "objectid": "247763",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "90",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "KI",
+            "startposition": "",
+            "color": "",
+            "score": "100",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65928693",
+      "date": "2022-11-20",
+      "quantity": "1",
+      "length": "52",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Finding Atlantis",
+        "objecttype": "thing",
+        "objectid": "363699",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "1",
+            "color": "Gelb",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65902484",
+      "date": "2022-11-19",
+      "quantity": "1",
+      "length": "203",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Planet B",
+        "objecttype": "thing",
+        "objectid": "367351",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "475",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "350",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "1",
+            "color": "Gelb",
+            "score": "505",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "2",
+            "color": "Blau",
+            "score": "422",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65865974",
+      "date": "2022-11-18",
+      "quantity": "1",
+      "length": "156",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Weather Machine",
+        "objecttype": "thing",
+        "objectid": "237179",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "34",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "start player",
+            "color": "Lila",
+            "score": "64",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65824141",
+      "date": "2022-11-16",
+      "quantity": "1",
+      "length": "162",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Planet B",
+        "objecttype": "thing",
+        "objectid": "367351",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "466",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "441",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65807225",
+      "date": "2022-11-15",
+      "quantity": "1",
+      "length": "34",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Finding Atlantis",
+        "objecttype": "thing",
+        "objectid": "363699",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65788389",
+      "date": "2022-11-14",
+      "quantity": "1",
+      "length": "68",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Roll for the Galaxy",
+        "objecttype": "thing",
+        "objectid": "132531",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "53",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "49",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65743581",
+      "date": "2022-11-13",
+      "quantity": "1",
+      "length": "50",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Café",
+        "objecttype": "thing",
+        "objectid": "284936",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "start player",
+            "color": "",
+            "score": "24",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "19",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65752271",
+      "date": "2022-11-13",
+      "quantity": "1",
+      "length": "63",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Finding Atlantis",
+        "objecttype": "thing",
+        "objectid": "363699",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65699323",
+      "date": "2022-11-12",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "irgendwo",
+      "item": {
+        "name": "Gutenberg",
+        "objecttype": "thing",
+        "objectid": "339958",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65696060",
+      "date": "2022-11-12",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "irgendwo",
+      "item": {
+        "name": "Planet B",
+        "objecttype": "thing",
+        "objectid": "367351",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "169",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "167",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65671180",
+      "date": "2022-11-11",
+      "quantity": "1",
+      "length": "60",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "The Red Cathedral",
+        "objecttype": "thing",
+        "objectid": "227224",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "22",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "34",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65625784",
+      "date": "2022-11-09",
+      "quantity": "1",
+      "length": "137",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Lost Ruins of Arnak",
+        "objecttype": "thing",
+        "objectid": "312484",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=341254]Die verlorenen Ruinen von Arnak: Die Expeditionsleiter[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "72",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "73",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65453673",
+      "date": "2022-11-03",
+      "quantity": "1",
+      "length": "41",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Under Falling Skies",
+        "objecttype": "thing",
+        "objectid": "306735",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "0",
+          "color": "",
+          "score": "null",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
+        }
+      }
+    },
+    {
+      "id": "65433077",
+      "date": "2022-11-02",
+      "quantity": "1",
+      "length": "116",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Merv: The Heart of the Silk Road",
+        "objecttype": "thing",
+        "objectid": "306040",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "fehler beim spielen",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65408440",
+      "date": "2022-11-01",
+      "quantity": "1",
+      "length": "115",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Beyond the Sun",
+        "objecttype": "thing",
+        "objectid": "317985",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "68",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Weiss",
+            "score": "42",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65404939",
+      "date": "2022-11-01",
+      "quantity": "1",
+      "length": "19",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "So Clover!",
+        "objecttype": "thing",
+        "objectid": "329839",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "1",
+            "color": "",
+            "score": "18",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Salome",
+            "startposition": "1",
+            "color": "",
+            "score": "18",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "1",
+            "color": "",
+            "score": "18",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "1",
+            "color": "",
+            "score": "18",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65397200",
+      "date": "2022-11-01",
+      "quantity": "1",
+      "length": "151",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Twilight Inscription",
+        "objecttype": "thing",
+        "objectid": "361545",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "64",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "42",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65305577",
+      "date": "2022-10-29",
+      "quantity": "1",
+      "length": "123",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Merv: The Heart of the Silk Road",
+        "objecttype": "thing",
+        "objectid": "306040",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "69",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "69",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65300809",
+      "date": "2022-10-29",
+      "quantity": "1",
+      "length": "30",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Space Alert",
+        "objecttype": "thing",
+        "objectid": "38453",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65300826",
+      "date": "2022-10-29",
+      "quantity": "1",
+      "length": "30",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Space Alert",
+        "objecttype": "thing",
+        "objectid": "38453",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Team 1",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65246977",
+      "date": "2022-10-27",
+      "quantity": "1",
+      "length": "26",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Palm Island",
+        "objecttype": "thing",
+        "objectid": "239464",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "Axt der Großmut freigeschaltet",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "1",
+          "color": "",
+          "score": "34",
+          "new": "0",
+          "rating": "0",
+          "win": "1"
+        }
+      }
+    },
+    {
+      "id": "65080678",
+      "date": "2022-10-22",
+      "quantity": "1",
+      "length": "81",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Dungeon Lords",
+        "objecttype": "thing",
+        "objectid": "45315",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "nicht fertig gespielt",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65061601",
+      "date": "2022-10-20",
+      "quantity": "1",
+      "length": "147",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Carnegie",
+        "objecttype": "thing",
+        "objectid": "310873",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "0",
+            "color": "Grau",
+            "score": "128",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "0",
+            "color": "Blau",
+            "score": "136",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65054367",
+      "date": "2022-10-20",
+      "quantity": "1",
+      "length": "32",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Under Falling Skies",
+        "objecttype": "thing",
+        "objectid": "306735",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "Schwierigkeitsgrad 0.5",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "",
+          "color": "",
+          "score": "",
+          "new": "0",
+          "rating": "0",
+          "win": "1"
+        }
+      }
+    },
+    {
+      "id": "64923783",
+      "date": "2022-10-15",
+      "quantity": "1",
+      "length": "157",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Carnegie",
+        "objecttype": "thing",
+        "objectid": "310873",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "0",
+            "color": "Grau",
+            "score": "141",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "0",
+            "color": "Blau",
+            "score": "96",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64930238",
+      "date": "2022-10-15",
+      "quantity": "1",
+      "length": "307",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "Dominant Species",
+        "objecttype": "thing",
+        "objectid": "62219",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "",
+            "color": "Pink",
+            "score": "125",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "",
+            "color": "Grün",
+            "score": "166",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "128",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "150",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64903960",
+      "date": "2022-10-14",
+      "quantity": "1",
+      "length": "31",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Rolling Realms",
+        "objecttype": "thing",
+        "objectid": "305682",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "16.7",
+            "new": "1",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "13.6",
+            "new": "1",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64760557",
+      "date": "2022-10-09",
+      "quantity": "1",
+      "length": "145",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Golem",
+        "objecttype": "thing",
+        "objectid": "298383",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Grau",
+            "score": "123",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Lila",
+            "score": "119",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64778700",
+      "date": "2022-10-09",
+      "quantity": "1",
+      "length": "65",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Seastead",
+        "objecttype": "thing",
+        "objectid": "307656",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Orange",
+            "score": "44",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Türkis",
+            "score": "36",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64706912",
+      "date": "2022-10-08",
+      "quantity": "1",
+      "length": "35",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Palm Island",
+        "objecttype": "thing",
+        "objectid": "239464",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "1",
+          "color": "",
+          "score": "38",
+          "new": "0",
+          "rating": "0",
+          "win": "1"
+        }
+      }
+    },
+    {
+      "id": "64722637",
+      "date": "2022-10-08",
+      "quantity": "1",
+      "length": "42",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Under Falling Skies",
+        "objecttype": "thing",
+        "objectid": "306735",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "Schwierigkeitsgrad 1",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "",
+          "color": "",
+          "score": "",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
+        }
+      }
+    },
+    {
+      "id": "64699099",
+      "date": "2022-10-07",
+      "quantity": "1",
+      "length": "70",
+      "incomplete": "0",
+      "nowinstats": "1",
+      "location": "home",
+      "item": {
+        "name": "Golem",
+        "objecttype": "thing",
+        "objectid": "298383",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Grau",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Lila",
+            "score": "",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64653321",
+      "date": "2022-10-05",
+      "quantity": "1",
+      "length": "46",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Canopy",
+        "objecttype": "thing",
+        "objectid": "295607",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "88",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "60",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64636384",
+      "date": "2022-10-04",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Dealt!",
+        "objecttype": "thing",
+        "objectid": "243430",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Anonymous player",
+            "startposition": "2",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64636399",
+      "date": "2022-10-04",
+      "quantity": "1",
+      "length": "0",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Port Royal: Big Box",
+        "objecttype": "thing",
+        "objectid": "331265",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgamecompilation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Anonymous player",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64614472",
+      "date": "2022-10-03",
+      "quantity": "1",
+      "length": "17",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Port Royal: Big Box",
+        "objecttype": "thing",
+        "objectid": "331265",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgamecompilation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "9",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "12",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64578935",
+      "date": "2022-10-02",
+      "quantity": "1",
+      "length": "180",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Anachrony",
+        "objecttype": "thing",
+        "objectid": "185343",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameintegration"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Gelb",
+            "score": "58",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "81",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64564863",
+      "date": "2022-10-02",
+      "quantity": "1",
+      "length": "92",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Wingspan",
+        "objecttype": "thing",
+        "objectid": "266192",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameintegration"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=290448]Flügelschlag: Europa-Erweiterung[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "0",
+            "color": "Gelb",
+            "score": "79",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "2",
+            "color": "Grün",
+            "score": "72",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "3",
+            "color": "Lila",
+            "score": "72",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64533067",
+      "date": "2022-10-01",
+      "quantity": "1",
+      "length": "182",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Viticulture Essential Edition",
+        "objecttype": "thing",
+        "objectid": "183394",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgamecompilation"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=202174]Viticulture: Tuscany Essential Edition[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "2",
+            "color": "Weiss",
+            "score": "29",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "1",
+            "color": "Grün",
+            "score": "26",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "21",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Blau",
+            "score": "31",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64459120",
+      "date": "2022-09-28",
+      "quantity": "1",
+      "length": "97",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "IKI",
+        "objecttype": "thing",
+        "objectid": "177478",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Lila",
+            "score": "43",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Rot",
+            "score": "36",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64434831",
+      "date": "2022-09-27",
+      "quantity": "1",
+      "length": "140",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Great Western Trail (Second Edition)",
+        "objecttype": "thing",
+        "objectid": "341169",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Rot",
+            "score": "63",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Blau",
+            "score": "98",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64366943",
+      "date": "2022-09-25",
+      "quantity": "1",
+      "length": "54",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Kuhhandel Master",
+        "objecttype": "thing",
+        "objectid": "56786",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "3390",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "",
+            "color": "",
+            "score": "8380",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "",
+            "score": "3250",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64368399",
+      "date": "2022-09-25",
+      "quantity": "1",
+      "length": "105",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Terra Mystica",
+        "objecttype": "thing",
+        "objectid": "120677",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Schwarz",
+            "score": "98",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "",
+            "color": "Grün",
+            "score": "114",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64339785",
+      "date": "2022-09-24",
+      "quantity": "1",
+      "length": "10",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "Dealt!",
+        "objecttype": "thing",
+        "objectid": "243430",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Christian",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "2",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "3",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64339833",
+      "date": "2022-09-24",
+      "quantity": "1",
+      "length": "5",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "Dealt!",
+        "objecttype": "thing",
+        "objectid": "243430",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Christian",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "2",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "3",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64342057",
+      "date": "2022-09-24",
+      "quantity": "1",
+      "length": "183",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "Bettina",
+      "item": {
+        "name": "Dune: Imperium",
+        "objecttype": "thing",
+        "objectid": "316554",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=342031]Dune: Imperium – Rise of Ix[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Bettina",
+            "startposition": "1",
+            "color": "Grün",
+            "score": "10",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Finn",
+            "startposition": "2",
+            "color": "Braun",
+            "score": "7",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "Kastanie",
+            "score": "7",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "Blau",
+            "score": "10",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64313030",
+      "date": "2022-09-23",
+      "quantity": "1",
+      "length": "101",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Viticulture Essential Edition",
+        "objecttype": "thing",
+        "objectid": "183394",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgamecompilation"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=202174]Viticulture: Tuscany Essential Edition[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "",
+            "color": "",
+            "score": "26",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "",
+            "color": "",
+            "score": "19",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64230598",
+      "date": "2022-09-19",
+      "quantity": "1",
+      "length": "73",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "It&#039;s a Wonderful World",
+        "objecttype": "thing",
+        "objectid": "271324",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog\n\nPlayed with expansions:\n- [thing=298851]Eine wundervolle Welt: Korruption &amp;amp; Aufstieg[/thing]",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "0",
+            "color": "",
+            "score": "45",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "0",
+            "color": "",
+            "score": "140",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64196857",
+      "date": "2022-09-18",
+      "quantity": "1",
+      "length": "34",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Clue",
+        "objecttype": "thing",
+        "objectid": "130592",
+        "subtypes": {
+          "subtype": [
+            {
+              "value": "boardgame"
+            },
+            {
+              "value": "boardgameimplementation"
+            }
+          ]
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "0",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "0",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Wera",
+            "startposition": "0",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Anonymous player",
+            "startposition": "1",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64048223",
+      "date": "2022-09-12",
+      "quantity": "1",
+      "length": "73",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Inis",
+        "objecttype": "thing",
+        "objectid": "155821",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "null",
+            "color": "",
+            "score": "null",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "63991077",
+      "date": "2022-09-11",
+      "quantity": "1",
+      "length": "33",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "irgendwo",
+      "item": {
+        "name": "Palm Island",
+        "objecttype": "thing",
+        "objectid": "239464",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "1",
+          "color": "",
+          "score": "35",
+          "new": "0",
+          "rating": "0",
+          "win": "1"
+        }
+      }
+    },
+    {
+      "id": "64008048",
+      "date": "2022-09-11",
+      "quantity": "1",
+      "length": "75",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "You&#039;re Bluffing!",
+        "objecttype": "thing",
+        "objectid": "1117",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "",
+            "score": "1500",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Salome",
+            "startposition": "null",
+            "color": "",
+            "score": "9550",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "Sofie",
+            "startposition": "null",
+            "color": "",
+            "score": "2610",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "63968484",
+      "date": "2022-09-10",
+      "quantity": "1",
+      "length": "22",
+      "incomplete": "0",
+      "nowinstats": "0",
+      "location": "home",
+      "item": {
+        "name": "Great Plains",
+        "objecttype": "thing",
+        "objectid": "330036",
+        "subtypes": {
+          "subtype": {
+            "value": "boardgame"
+          }
+        }
+      },
+      "comments": "#BGGCatalog",
+      "players": {
+        "player": [
+          {
+            "username": "gismo42",
+            "userid": "2587291",
+            "name": "Gremmel",
+            "startposition": "null",
+            "color": "",
+            "score": "13",
+            "new": "0",
+            "rating": "0",
+            "win": "0"
+          },
+          {
+            "username": "",
+            "userid": "0",
+            "name": "wera",
+            "startposition": "null",
+            "color": "",
+            "score": "14",
+            "new": "0",
+            "rating": "0",
+            "win": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

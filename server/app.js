@@ -8,6 +8,12 @@ global.__extdir = path.join('..', 'extern');
 const express = require('./lib/express');
 const socketIo = require('./lib/socketIo');
 const logger = require('./lib/logger');
+const bgg = require('./lib/bgg');
+
+// BGG playdata abrufen
+bgg.init();
+
+// bgg.getCollectionData();
 
 logger.debug('init express');
 

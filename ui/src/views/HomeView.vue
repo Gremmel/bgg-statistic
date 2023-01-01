@@ -20,10 +20,10 @@ export default {
   sockets: {
     connect () {
       console.log('socket HomeView connected');
-      this.toServer('init', 'hallo vom client');
+      this.toServer('init');
     },
     initHome (data) {
-      this.msg = data.msg;
+      console.log('initHome', data);
     }
   },
   mounted () {
