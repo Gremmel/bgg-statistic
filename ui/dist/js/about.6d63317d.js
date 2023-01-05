@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkuivue3"]=self["webpackChunkuivue3"]||[]).push([[443],{35:function(u,n,e){e.r(n),e.d(n,{default:function(){return l}});var t=e(252);const r={class:"about"},c=(0,t._)("h1",null,"About",-1),s=[c];function a(u,n){return(0,t.wg)(),(0,t.iD)("div",r,s)}var i=e(744);const o={},f=(0,i.Z)(o,[["render",a]]);var l=f}}]);
-//# sourceMappingURL=about.6d63317d.js.map

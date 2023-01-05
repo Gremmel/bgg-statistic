@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="p-1">
-      <h1>Board Game Statistik</h1>
+      <h4>Board Game Statistik</h4>
     </div>
   </header>
 </template>
@@ -52,7 +52,7 @@ export default {
     background-color: #e6e6e6;
   }
 
-  h1 {
+  h4 {
     margin: 0px;
   }
 </style>

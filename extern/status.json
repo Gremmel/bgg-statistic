@@ -1,0 +1,73 @@
+{
+  "players": {
+    "albert": {
+      "name": "Albert",
+      "id": "0",
+      "checked": false
+    },
+    "anonymous player": {
+      "name": "Anonymous player",
+      "id": "0",
+      "checked": false
+    },
+    "bettina": {
+      "name": "Bettina",
+      "id": "0",
+      "checked": false
+    },
+    "christian": {
+      "name": "Christian",
+      "id": "0",
+      "checked": false
+    },
+    "finn": {
+      "name": "Finn",
+      "id": "0",
+      "checked": false
+    },
+    "gremmel": {
+      "name": "Gremmel",
+      "id": "2587291",
+      "checked": true
+    },
+    "heidi": {
+      "name": "Heidi",
+      "id": "0",
+      "checked": false
+    },
+    "ki": {
+      "name": "KI",
+      "id": "0",
+      "checked": false
+    },
+    "neill": {
+      "name": "Neill",
+      "id": "0",
+      "checked": false
+    },
+    "salome": {
+      "name": "Salome",
+      "id": "0",
+      "checked": false
+    },
+    "sofie": {
+      "name": "Sofie",
+      "id": "0",
+      "checked": false
+    },
+    "wally": {
+      "name": "Wally",
+      "id": "0",
+      "checked": false
+    },
+    "wera": {
+      "name": "Wera",
+      "id": "0",
+      "checked": true
+    }
+  },
+  "config": {
+    "playerSearchMode": "exact"
+  },
+  "tabView": "plays"
+}

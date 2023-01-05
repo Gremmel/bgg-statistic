@@ -35,27 +35,28 @@
   <!-- Seiten Kopf -->
   <AppHeader />
   <!-- Navigationslinks -->
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <!-- Seiteninhalt -->
   <router-view />
   <!-- Fußzeile -->
-  <AppFooter />
+  <!-- <AppFooter /> -->
 </template>
 
 <script>
 
 // @ is an alias to /src
-import AppFooter from '@/components/AppFooter.vue';
+// import AppFooter from '@/components/AppFooter.vue';
 import AppHeader from '@/components/AppHeader.vue';
 
 export default {
   name: 'AppView',
   components: {
-    AppHeader,
-    AppFooter
+    AppHeader
+
+    // AppFooter
   },
   data () {
     return {

@@ -5,6 +5,7 @@ import router from './router';
 import store from './store';
 import VueSocketIO from 'vue-3-socket.io';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 // import "bootstrap";
 
@@ -12,7 +13,8 @@ const app = createApp(App).use(store).use(router);
 
 // Client side Socket.IO object
 // dev
-const socket = io('http://localhost:3000');
+// const socket = io('http://localhost:3000');
+const socket = io('http://192.168.178.10:3000');
 
 // normal
 // const socket = io();

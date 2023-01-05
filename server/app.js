@@ -10,20 +10,31 @@ const socketIo = require('./lib/socketIo');
 const logger = require('./lib/logger');
 const bgg = require('./lib/bgg');
 
-// BGG playdata abrufen
-bgg.init();
+(async () => {
+  try {
+    // BGG playdata abrufen
+    // await bgg.getPlayData();
+    // await bgg.getCollectionData();
+    // process.exit(0);
 
-// bgg.getCollectionData();
+    bgg.init();
 
-logger.debug('init express');
+    logger.debug('init express');
 
-// webserver initialisieren
-express.init();
+    // webserver initialisieren
+    express.init();
 
-logger.debug('init socket IO');
+    logger.debug('init socket IO');
 
-// Socket IO
-socketIo.init(express.server);
+    // Socket IO
+    socketIo.init(express.server);
+
+    express.start();
+  } catch (error) {
+    logger.error(error);
+    process.exit(1);
+  }
+})();
 
 process.on('SIGINT', async () => {
   logger.debug(' SIGINT (Ctrl+C)');
@@ -39,4 +50,3 @@ process.on('exit', (code) => {
   logger.debug(`exit with code: ${code}`);
 });
 
-express.start();
