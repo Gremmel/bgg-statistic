@@ -219,6 +219,13 @@ const HomeView = {
                     for (const pplayer of play.players.player) {
                       if (pplayer.name.toLowerCase() === name) {
                         pplayer.points = points;
+                        if (pplayer.win === '1') {
+                          if (!player.win) {
+                            player.win = 0;
+                          }
+
+                          player.win += 1;
+                        }
                       }
                     }
                   }

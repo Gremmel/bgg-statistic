@@ -188,7 +188,7 @@
               v-if="ratedPlayers[0]"
               class="pointsPlayer1"
             >
-              {{ ratedPlayers[0].points }}
+              {{ ratedPlayers[0].points }} ({{ ratedPlayers[0].win }})
             </span>
             <span
               v-if="ratedPlayers[1]"
@@ -200,7 +200,7 @@
               v-if="ratedPlayers[1]"
               class="pointsPlayer2"
             >
-              {{ ratedPlayers[1].points }}
+              {{ ratedPlayers[1].points }} ({{ ratedPlayers[1].win }})
             </span>
             <span
               v-if="ratedPlayers[2]"
@@ -212,7 +212,7 @@
               v-if="ratedPlayers[2]"
               class="pointsPlayer3"
             >
-              {{ ratedPlayers[2].points }}
+              {{ ratedPlayers[2].points }} ({{ ratedPlayers[2].win }})
             </span>
           </div>
           <!-- der rest -->
@@ -224,7 +224,7 @@
                   :key="'tr' + player.name"
                 >
                   <td>{{ player.name }}</td>
-                  <td>{{ player.points }}</td>
+                  <td>{{ player.points }} ({{ player.win }})</td>
                 </tr>
               </tbody>
             </table>
@@ -235,7 +235,7 @@
 
     <div class="bg-dark text-light" v-show="status.tabView === 'bgg'">
       <div class="container text-center">
-        <button :disabled="disableBtnDownload" @click="clickDownloadPlays()" type="button" class="btn btn-secondary mt-2">Partien neu von BGG Laden</button><br>
+        <button :disabled="disableBtnDownload" @click="clickDownloadPlays()" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden</button><br>
         <button :disabled="disableBtnDownload" @click="clickDownloadCatalog()" type="button" class="btn btn-secondary mt-2">Sammlung neu von BGG Laden</button>
       </div>
       <div v-if="downloadProgressStyle !== ''" class="progress m-4" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">

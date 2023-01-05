@@ -53,7 +53,7 @@
     "sofie": {
       "name": "Sofie",
       "id": "0",
-      "checked": true
+      "checked": false
     },
     "wally": {
       "name": "Wally",
@@ -63,11 +63,11 @@
     "wera": {
       "name": "Wera",
       "id": "0",
-      "checked": false
+      "checked": true
     }
   },
   "config": {
     "playerSearchMode": "exact"
   },
-  "tabView": "player"
+  "tabView": "rating"
 }
