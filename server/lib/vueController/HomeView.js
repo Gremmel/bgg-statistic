@@ -64,7 +64,6 @@ const HomeView = {
   },
 
   async init (ioClient, payload) {
-    logger.debug('init', payload);
     let status = {};
 
     // letzten gespeicherten status laden
@@ -103,7 +102,6 @@ const HomeView = {
   },
 
   async statusChanged (ioClient, status) {
-    logger.debug('statusChanged', status);
     try {
       this.status = status;
       await this.writeStatus(status);
@@ -181,12 +179,13 @@ const HomeView = {
             }
           }
         }
-        logger.fatal('searchPlayers', searchPlayers, numPlayer);
 
         const statistic = {
           plays: [],
           players: searchPlayers
         };
+
+        statistic.countRatedPlays = 0;
 
         for (const play of this.plays) {
           if (play.players.player.length === numPlayer) {
@@ -197,6 +196,8 @@ const HomeView = {
               statistic.plays.push(play);
 
               if (play.nowinstats !== '1') {
+                statistic.countRatedPlays += 1;
+
                 // plazierung und punkte für spieler
                 for (const name in statistic.players) {
                   if (Object.hasOwnProperty.call(statistic.players, name)) {

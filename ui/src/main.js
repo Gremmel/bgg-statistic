@@ -14,7 +14,7 @@ const app = createApp(App).use(store).use(router);
 // Client side Socket.IO object
 // dev
 // const socket = io('http://localhost:3000');
-const socket = io('http://192.168.178.10:3000');
+const socket = io('http://192.168.178.182:3000');
 
 // normal
 // const socket = io();

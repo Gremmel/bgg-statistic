@@ -13,7 +13,7 @@
     "bettina": {
       "name": "Bettina",
       "id": "0",
-      "checked": false
+      "checked": true
     },
     "christian": {
       "name": "Christian",
@@ -23,7 +23,7 @@
     "finn": {
       "name": "Finn",
       "id": "0",
-      "checked": false
+      "checked": true
     },
     "gremmel": {
       "name": "Gremmel",
@@ -69,5 +69,5 @@
   "config": {
     "playerSearchMode": "exact"
   },
-  "tabView": "plays"
+  "tabView": "player"
 }
