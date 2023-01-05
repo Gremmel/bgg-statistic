@@ -13,17 +13,21 @@ const socketIo = {
   clients: {},
   vueControllers: {},
 
-  async requireViewController () {
+  async requireViewController (bgg) {
     const controllerList = await fs.readdir(path.join(__dirname, 'vueController'));
 
     for (const controller of controllerList) {
       logger.info('require vueController', controller);
       // eslint-disable-next-line global-require
       this.vueControllers[controller] = require(path.join(__dirname, 'vueController', controller));
+
+      if (this.vueControllers[controller].setBgg) {
+        this.vueControllers[controller].setBgg(bgg);
+      }
     }
   },
 
-  init (server) {
+  init (server, bgg) {
     this.server = server;
 
     this.io = socket(this.server, {
@@ -36,7 +40,7 @@ const socketIo = {
     this.io.use(middleware);
 
     // controller requiren
-    this.requireViewController();
+    this.requireViewController(bgg);
 
     this.io.on('connection', (client) => {
       this.clients[client.id] = client;

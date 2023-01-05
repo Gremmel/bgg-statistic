@@ -10,6 +10,11 @@ const HomeView = {
   plays: undefined,
   statistic: undefined,
   collection: undefined,
+  bgg: undefined,
+
+  setBgg (bgg) {
+    this.bgg = bgg;
+  },
 
   start () {
     logger.info('start in HomeView');
@@ -63,7 +68,7 @@ const HomeView = {
     });
   },
 
-  async init (ioClient, payload) {
+  async init (ioClient) {
     let status = {};
 
     // letzten gespeicherten status laden
@@ -327,6 +332,22 @@ const HomeView = {
     }
 
     return winMax;
+  },
+
+  async downloadPlays (ioClient) {
+    logger.fatal('downloadPlays');
+    await this.bgg.getPlayData((value, total) => {
+      ioClient.emit('statusGetPlayData', { value, total });
+    });
+    this.plays = undefined;
+    ioClient.emit('downloadFinished');
+  },
+
+  async downloadCatalog (ioClient) {
+    logger.fatal('downloadCatalog');
+    await this.bgg.getCollectionData();
+    await this.loadCollection();
+    ioClient.emit('downloadFinished');
   }
 };
 

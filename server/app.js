@@ -27,7 +27,7 @@ const bgg = require('./lib/bgg');
     logger.debug('init socket IO');
 
     // Socket IO
-    socketIo.init(express.server);
+    socketIo.init(express.server, bgg);
 
     express.start();
   } catch (error) {

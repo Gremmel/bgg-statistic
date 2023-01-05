@@ -1,7 +1,7 @@
 {
-  "totalitems": "318",
+  "totalitems": "319",
   "termsofuse": "https://boardgamegeek.com/xmlapi/termsofuse",
-  "pubdate": "Sun, 01 Jan 2023 19:18:19 +0000",
+  "pubdate": "Thu, 05 Jan 2023 20:29:22 +0000",
   "item": [
     {
       "objecttype": "thing",
@@ -49,9 +49,9 @@
         "wanttobuy": "0",
         "wishlist": "0",
         "preordered": "0",
-        "lastmodified": "2021-12-15 02:13:33"
+        "lastmodified": "2023-01-02 04:53:12"
       },
-      "numplays": 1
+      "numplays": 2
     },
     {
       "objecttype": "thing",
@@ -489,6 +489,32 @@
     },
     {
       "objecttype": "thing",
+      "objectid": "369880",
+      "subtype": "boardgame",
+      "collid": "101780961",
+      "name": {
+        "text": "Beer &amp; Bread",
+        "sortindex": "1"
+      },
+      "yearpublished": 2022,
+      "image": "https://cf.geekdo-images.com/vPRTRJce1GOsUf6M_dWd-g__original/img/IiugqYTDlz1Rk1EAaEwDxr65YgI=/0x0/filters:format(jpeg)/pic7064178.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/vPRTRJce1GOsUf6M_dWd-g__thumb/img/x0Q2R8xgABJACUHYSCA00a7j3Cg=/fit-in/200x150/filters:strip_icc()/pic7064178.jpg",
+      "status": {
+        "own": "0",
+        "prevowned": "0",
+        "fortrade": "0",
+        "want": "0",
+        "wanttoplay": "0",
+        "wanttobuy": "0",
+        "wishlist": "1",
+        "wishlistpriority": "4",
+        "preordered": "0",
+        "lastmodified": "2023-01-04 04:22:57"
+      },
+      "numplays": 0
+    },
+    {
+      "objecttype": "thing",
       "objectid": "317985",
       "subtype": "boardgame",
       "collid": "87545935",
@@ -812,7 +838,7 @@
         "preordered": "0",
         "lastmodified": "2022-11-11 14:35:02"
       },
-      "numplays": 2
+      "numplays": 3
     },
     {
       "objecttype": "thing",
@@ -1730,7 +1756,7 @@
         "preordered": "0",
         "lastmodified": "2022-10-14 06:38:59"
       },
-      "numplays": 10
+      "numplays": 11
     },
     {
       "objecttype": "thing",
@@ -2490,7 +2516,7 @@
         "preordered": "0",
         "lastmodified": "2022-10-14 06:18:19"
       },
-      "numplays": 5
+      "numplays": 6
     },
     {
       "objecttype": "thing",
@@ -4186,7 +4212,7 @@
         "preordered": "0",
         "lastmodified": "2022-12-29 03:36:39"
       },
-      "numplays": 0
+      "numplays": 1
     },
     {
       "objecttype": "thing",
@@ -4568,7 +4594,7 @@
         "preordered": "0",
         "lastmodified": "2022-12-18 09:36:44"
       },
-      "numplays": 5
+      "numplays": 6
     },
     {
       "objecttype": "thing",
@@ -7301,8 +7327,8 @@
         "sortindex": "1"
       },
       "yearpublished": 2020,
-      "image": "https://cf.geekdo-images.com/iIjC1w2iJmOFpg9D2UQ2sg__original/img/owKmeCW5Mk-fuN7gs1_09IyIKTU=/0x0/filters:format(jpeg)/pic6915561.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/iIjC1w2iJmOFpg9D2UQ2sg__thumb/img/S-__woBLWLKuWqL69S0VlRIPV4Q=/fit-in/200x150/filters:strip_icc()/pic6915561.jpg",
+      "image": "https://cf.geekdo-images.com/Uht8fg3oOYgeevtbhMmGKg__original/img/0Tm3eRAeePh540M5r5LvQSE1zZQ=/0x0/filters:format(jpeg)/pic7257235.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/Uht8fg3oOYgeevtbhMmGKg__thumb/img/iEzktvnCSUCzav7wwXg3soE0NOg=/fit-in/200x150/filters:strip_icc()/pic7257235.jpg",
       "status": {
         "own": "1",
         "prevowned": "0",

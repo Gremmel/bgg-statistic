@@ -81,10 +81,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: 100%!important;
+  background-color: rgba(33,37,41);
 }
 
 html, body {
-  height: 100%!important;;
+  height: 100%!important;
 }
 
 nav {

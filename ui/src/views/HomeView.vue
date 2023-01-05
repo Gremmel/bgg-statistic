@@ -1,35 +1,38 @@
+<!-- eslint-disable vue/attributes-order -->
+<!-- eslint-disable vue/singleline-html-element-content-newline -->
+<!-- eslint-disable vue/max-attributes-per-line -->
 <template>
-  <div class="home">
+  <div data-bs-theme="dark" class="home bg-dark">
     <!-- Navleiste -->
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs bg-dark">
       <li class="nav-item">
         <a
-          class="nav-link"
-          :class="{active: status.tabView === 'player'}"
+          class="nav-link text-secondary"
+          :class="{'active text-light bg-secondary': status.tabView === 'player'}"
           href="#"
           @click="tabViewClick('player')"
         >Spieler</a>
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
-          :class="{active: status.tabView === 'plays'}"
+          class="nav-link text-secondary"
+          :class="{'active text-light bg-secondary': status.tabView === 'plays'}"
           href="#"
           @click="tabViewClick('plays')"
         >Partien</a>
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
-          :class="{active: status.tabView === 'rating'}"
+          class="nav-link text-secondary"
+          :class="{'active text-light bg-secondary': status.tabView === 'rating'}"
           href="#"
           @click="tabViewClick('rating')"
         >Wertung</a>
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
-          :class="{active: status.tabView === 'bgg'}"
+          class="nav-link text-secondary"
+          :class="{'active text-light bg-secondary': status.tabView === 'bgg'}"
           href="#"
           @click="tabViewClick('bgg')"
         >BGG</a>
@@ -38,7 +41,7 @@
 
     <!-- Spieleransicht -->
     <div v-show="status.tabView === 'player'">
-      <ol class="list-group">
+      <ol class="list-group p-2">
         <li
           v-for="(player, key) in status.players"
           :key="key"
@@ -62,15 +65,15 @@
       </ol>
     </div>
 
-    <div v-show="status.tabView === 'plays'">
+    <div class="container bg-dark" v-show="status.tabView === 'plays'">
       <ol class="list-group">
         <li
           v-for="play in statistic.plays"
           :key="play.id"
-          class="list-group-item"
-          :class="{'list-group-item-secondary': play.nowinstats === '1'}"
+          class="list-group-item list-group-item-plays text-light"
+          :class="{'bg-secondary': play.nowinstats === '1', 'bg-dark': play.nowinstats === '0'}"
         >
-          <div class="row">
+          <div class="row" data-bs-toggle="collapse" :data-bs-target="'#collapse' + play.id" aria-expanded="false" :aria-controls="'collapse' + play.id">
             <div class="col-auto text-start">
               <img
                 :src="play.collection.thumbnail"
@@ -102,7 +105,7 @@
                     v-for="player in play.players.player"
                     v-show="player.win === '1'"
                     :key="player.name"
-                    class="badge bg-primary rounded-pill me-1"
+                    class="badge bg-secondary rounded-pill me-1"
                   >
                     {{ player.name }}
                   </span>
@@ -111,26 +114,29 @@
               <!-- Aufklappbare zusatzinfo -->
               <div
                 :id="'collapse' + play.id"
-                class="row collapse card p-1 mt-1"
+                class="row collapse card bg-light p-1 m-1"
               >
                 <div class="col">
                   <!-- Punkte -->
                   <div class="row">
-                    <div class="col">
-                      <table class="table">
+                    <div class="col p-1">
+                      <table class="table m-0">
                         <tbody>
                           <tr
                             v-for="player in play.players.player"
                             :key="player.name"
-                            :class="{'table-success': player.win === '1'}"
+                            :class="{'bg-success': player.win === '1'}"
                           >
-                            <td>{{ player.name }}</td>
-                            <td>
-                              <span v-if="player.points > 0" class="badge bg-primary rounded-pill">
+                            <td class="p-1">{{ player.name }}</td>
+                            <td class="p-1">
+                              <span
+                                v-if="player.points > 0"
+                                class="badge bg-dark rounded-pill"
+                              >
                                 {{ player.points }}
                               </span>
                             </td>
-                            <td>{{ player.score }}</td>
+                            <td class="p-1">{{ player.score }}</td>
                           </tr>
                         </tbody>
                       </table>
@@ -153,7 +159,7 @@
       </ol>
     </div>
 
-    <div v-show="status.tabView === 'rating'">
+    <div class="bg-dark text-light" v-show="status.tabView === 'rating'">
       <div class="container text-start">
         <div class="row">
           <div class="col">
@@ -163,13 +169,14 @@
             {{ statistic.countRatedPlays }}
           </div>
         </div>
-        <div class="row">
+        <div class="row text-dark">
           <!-- treppchen -->
           <div class="treppe">
             <img
               src="treppchen.jpg"
               alt="siegertreppe"
               style="width: 100%;"
+              class="imgTreppchen"
             >
             <span
               v-if="ratedPlayers[0]"
@@ -210,7 +217,7 @@
           </div>
           <!-- der rest -->
           <div>
-            <table class="table">
+            <table class="table text-light">
               <tbody>
                 <tr
                   v-for="player in restOfPlayers"
@@ -223,6 +230,16 @@
             </table>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="bg-dark text-light" v-show="status.tabView === 'bgg'">
+      <div class="container text-center">
+        <button :disabled="disableBtnDownload" @click="clickDownloadPlays()" type="button" class="btn btn-secondary mt-2">Partien neu von BGG Laden</button><br>
+        <button :disabled="disableBtnDownload" @click="clickDownloadCatalog()" type="button" class="btn btn-secondary mt-2">Sammlung neu von BGG Laden</button>
+      </div>
+      <div v-if="downloadProgressStyle !== ''" class="progress m-4" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-success" :style="downloadProgressStyle" />
       </div>
     </div>
   </div>
@@ -240,7 +257,12 @@ export default {
       name: 'HomeView',
       ioConnected: false,
       status: {},
-      statistic: {}
+      statistic: {},
+      disableBtnDownload: false,
+      downloadPlaysCount: {
+        value: 0,
+        total: 10
+      }
     };
   },
   sockets: {
@@ -264,9 +286,28 @@ export default {
     setStatistic (statistic) {
       console.log('statistic', statistic);
       this.statistic = statistic;
+    },
+    downloadFinished () {
+      this.disableBtnDownload = false;
+      this.downloadPlaysCount.value = 0;
+      this.status.tabView = 'rating';
+      this.sendStatusChanged();
+    },
+    statusGetPlayData (data) {
+      this.downloadPlaysCount.value = data.value;
+      this.downloadPlaysCount.total = data.total;
     }
   },
   computed: {
+    downloadProgressStyle () {
+      let str = '';
+
+      if (this.downloadPlaysCount.value > 0) {
+        str = 'width: ' + (this.downloadPlaysCount.value / this.downloadPlaysCount.total * 100) + '%';
+      }
+
+      return str;
+    },
     ratedPlayers () {
       const unsorted = [];
 
@@ -301,6 +342,14 @@ export default {
     }
   },
   methods: {
+    clickDownloadPlays () {
+      this.disableBtnDownload = true;
+      this.toServer('downloadPlays');
+    },
+    clickDownloadCatalog () {
+      this.disableBtnDownload = true;
+      this.toServer('downloadCatalog');
+    },
     async playerClicked (playername) {
       console.log('player clicked', playername);
       this.sendStatusChanged();
@@ -329,9 +378,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .list-group-item-plays {
+    border-color: #353535;
+  }
   .thumbnail {
     max-height: 5rem;
     max-width: 4rem;
+    border-radius: 0.5rem;
   }
 
   .treppe {
@@ -384,6 +437,20 @@ export default {
     left: 72%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
+  }
+
+  .form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+  }
+  .form-check-input:focus {
+    border-color: #6b6b6b;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(114, 114, 114, 0.25);
+  }
+
+  .imgTreppchen {
+    border-radius: 1rem;
   }
 
 </style>

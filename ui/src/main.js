@@ -5,7 +5,10 @@ import router from './router';
 import store from './store';
 import VueSocketIO from 'vue-3-socket.io';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import 'bootstrap/dist/css/bootstrap-reboot.min.css';
+import 'bootstrap/dist/css/bootstrap-utilities.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // import "bootstrap";
 

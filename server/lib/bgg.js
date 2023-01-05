@@ -100,13 +100,15 @@ const bgg = {
     });
   },
 
-  async getPlayData () {
+  async getPlayData (statusFuc) {
     return new Promise(async (resolve, reject) => {
       try {
         // const { data } = await bggClient.get('user', { name: this.user });
         // solange abfragen bis keine einträge mehr kommen
         let page = 1;
         let next = true;
+
+        this.playData.splice(0);
 
         while (next) {
           logger.info('read page', page);
@@ -117,9 +119,11 @@ const bgg = {
           } else {
             next = false;
           }
-          logger.info('length', this.playData.length);
+          if (statusFuc) {
+            statusFuc(this.playData.length, data.total);
+          }
 
-          if (page > 20) {
+          if (page > 50) {
             next = false;
           }
 
@@ -138,6 +142,8 @@ const bgg = {
   async getCollectionData () {
     return new Promise(async (resolve, reject) => {
       try {
+        logger.info('getCollction Data from BGG');
+
         // const { data } = await bggClient.get('user', { name: this.user });
         const { data } = await bggClient.get('collection', { username: this.user }, 2);
 
@@ -145,6 +151,7 @@ const bgg = {
 
         await this.writeCollectionDataToFile();
 
+        logger.info('getCollction Data from BGG finished');
         resolve(data);
       } catch (error) {
         reject(error);

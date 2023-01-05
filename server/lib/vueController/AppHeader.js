@@ -10,7 +10,6 @@ const AppHeader = {
   },
 
   init (ioClient, payload) {
-    logger.debug('init', payload);
     ioClient.emit('initAppHeader', {
       msg: 'Hallo Header vom Server'
     });

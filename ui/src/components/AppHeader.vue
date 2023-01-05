@@ -1,7 +1,9 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+<!-- eslint-disable vue/singleline-html-element-content-newline -->
 <template>
   <header>
-    <div class="p-1">
-      <h4>Board Game Statistik</h4>
+    <div data-bs-theme="dark" class="p-1 text-light bg-dark">
+      <h4 class="">Board Game Statistik</h4>
     </div>
   </header>
 </template>
@@ -13,17 +15,12 @@ export default {
   },
   data () {
     return {
-      ioConnected: false,
-      msg: ''
+      ioConnected: false
     };
   },
   sockets: {
     connect () {
       console.log('socket Header connected');
-      this.toServer('init', 'Hallo vom Client');
-    },
-    initAppHeader (data) {
-      this.msg = data.msg;
     }
   },
   mounted () {
@@ -48,10 +45,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  header {
-    background-color: #e6e6e6;
-  }
-
   h4 {
     margin: 0px;
   }
