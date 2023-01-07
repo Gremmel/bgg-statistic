@@ -198,6 +198,12 @@ const HomeView = {
               // infos aus collection data hinzufügen
               play.collection = await this.getCollectionData(play);
 
+              if (!play.collection.name) {
+                play.collection.name = {
+                  text: play.item.name
+                };
+              }
+
               statistic.plays.push(play);
 
               if (play.nowinstats !== '1') {
@@ -353,7 +359,7 @@ const HomeView = {
   async downloadCatalog (ioClient) {
     logger.fatal('downloadCatalog');
     await this.bgg.getCollectionData();
-    await this.loadCollection();
+    this.collection = await this.loadCollection();
     ioClient.emit('downloadFinished');
   }
 };

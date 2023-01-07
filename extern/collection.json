@@ -1,7 +1,7 @@
 {
-  "totalitems": "319",
+  "totalitems": "320",
   "termsofuse": "https://boardgamegeek.com/xmlapi/termsofuse",
-  "pubdate": "Thu, 05 Jan 2023 20:29:22 +0000",
+  "pubdate": "Sat, 07 Jan 2023 09:18:16 +0000",
   "item": [
     {
       "objecttype": "thing",
@@ -1368,7 +1368,7 @@
         "wanttobuy": "0",
         "wishlist": "0",
         "preordered": "0",
-        "lastmodified": "2022-12-18 05:04:19"
+        "lastmodified": "2023-01-06 11:46:36"
       },
       "numplays": 0
     },
@@ -1393,7 +1393,7 @@
         "wanttobuy": "0",
         "wishlist": "0",
         "preordered": "0",
-        "lastmodified": "2022-12-22 13:47:16"
+        "lastmodified": "2023-01-06 11:45:50"
       },
       "numplays": 0
     },
@@ -3276,6 +3276,31 @@
     },
     {
       "objecttype": "thing",
+      "objectid": "166211",
+      "subtype": "boardgame",
+      "collid": "101948543",
+      "name": {
+        "text": "Hexagonal Wars",
+        "sortindex": "1"
+      },
+      "yearpublished": 2014,
+      "image": "https://cf.geekdo-images.com/xVIvqWZ6uiDmHTpLAhpf3w__original/img/3IADfUfD9uQ95v_MK6EUiV2NEpI=/0x0/filters:format(jpeg)/pic2562387.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/xVIvqWZ6uiDmHTpLAhpf3w__thumb/img/uN4BXBv6KcPhewf-F15dHLQflro=/fit-in/200x150/filters:strip_icc()/pic2562387.jpg",
+      "status": {
+        "own": "0",
+        "prevowned": "0",
+        "fortrade": "0",
+        "want": "0",
+        "wanttoplay": "0",
+        "wanttobuy": "0",
+        "wishlist": "0",
+        "preordered": "0",
+        "lastmodified": "2023-01-07 03:12:17"
+      },
+      "numplays": 1
+    },
+    {
+      "objecttype": "thing",
       "objectid": "254888",
       "subtype": "boardgame",
       "collid": "93142458",
@@ -4210,7 +4235,7 @@
         "wanttobuy": "0",
         "wishlist": "0",
         "preordered": "0",
-        "lastmodified": "2022-12-29 03:36:39"
+        "lastmodified": "2023-01-06 11:48:21"
       },
       "numplays": 1
     },

@@ -24,6 +24,8 @@ const bgg = {
         await this.loadPlayData();
         logger.info('playData lenght', this.playData.length);
 
+        await this.loadCollectionData();
+
         await this.calcPlayList();
 
         resolve();
@@ -96,6 +98,26 @@ const bgg = {
         resolve();
       } catch (error) {
         reject(error);
+      }
+    });
+  },
+
+  async loadCollectionData () {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // eslint-disable-next-line no-undef
+        this.collectionData = await fs.readJSON(path.join(__extdir, 'collection.json'));
+        resolve();
+      } catch (error) {
+        if (error.code === 'ENOENT') {
+          try {
+            await this.getCollectionData();
+          } catch (error2) {
+            reject(error2);
+          }
+        } else {
+          logger.error(error);
+        }
       }
     });
   },

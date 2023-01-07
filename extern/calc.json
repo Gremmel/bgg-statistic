@@ -400,6 +400,16 @@
         }
       }
     },
+    "166211": {
+      "name": "Hexagonal Wars",
+      "objecttype": "thing",
+      "objectid": "166211",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "167791": {
       "name": "Terraforming Mars",
       "objecttype": "thing",
@@ -1625,6 +1635,14 @@
     }
   },
   "players": {
+    "bettina": {
+      "name": "Bettina",
+      "id": "0"
+    },
+    "finn": {
+      "name": "Finn",
+      "id": "0"
+    },
     "gremmel": {
       "name": "Gremmel",
       "id": "2587291"
@@ -1657,14 +1675,6 @@
       "name": "Wally",
       "id": "0"
     },
-    "bettina": {
-      "name": "Bettina",
-      "id": "0"
-    },
-    "finn": {
-      "name": "Finn",
-      "id": "0"
-    },
     "automa": {
       "name": "Automa",
       "id": "0"
@@ -1683,10 +1693,6 @@
     },
     "tt": {
       "name": "TT",
-      "id": "0"
-    },
-    "fin": {
-      "name": "Fin",
       "id": "0"
     }
   }

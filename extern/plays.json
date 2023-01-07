@@ -1,5 +1,72 @@
 [
   {
+    "id": "67588737",
+    "date": "2023-01-07",
+    "quantity": "1",
+    "length": "260",
+    "incomplete": "0",
+    "nowinstats": "0",
+    "location": "home",
+    "item": {
+      "name": "Hexagonal Wars",
+      "objecttype": "thing",
+      "objectid": "166211",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "players": {
+      "player": [
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Bettina",
+          "startposition": "",
+          "color": "",
+          "score": "12",
+          "new": "1",
+          "rating": "0",
+          "win": "1"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Finn",
+          "startposition": "",
+          "color": "",
+          "score": "7",
+          "new": "1",
+          "rating": "0",
+          "win": "0"
+        },
+        {
+          "username": "gismo42",
+          "userid": "2587291",
+          "name": "Gremmel",
+          "startposition": "",
+          "color": "",
+          "score": "11",
+          "new": "1",
+          "rating": "0",
+          "win": "0"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Wera",
+          "startposition": "",
+          "color": "",
+          "score": "6",
+          "new": "1",
+          "rating": "0",
+          "win": "0"
+        }
+      ]
+    }
+  },
+  {
     "id": "67494347",
     "date": "2023-01-04",
     "quantity": "1",
@@ -987,7 +1054,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "",
           "color": "",
           "score": "",
@@ -1077,7 +1144,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "start player",
           "color": "",
           "score": "",
@@ -1189,7 +1256,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "",
           "color": "",
           "score": "",
@@ -1234,7 +1301,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "start player",
           "color": "",
           "score": "34",
@@ -1279,7 +1346,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "",
           "color": "",
           "score": "",
@@ -1324,7 +1391,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "",
           "color": "",
           "score": "",
@@ -3006,7 +3073,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "",
           "color": "",
           "score": "null",
@@ -11243,7 +11310,7 @@
           "score": "37",
           "new": "0",
           "rating": "0",
-          "win": "0"
+          "win": "1"
         }
       ]
     }
@@ -17903,12 +17970,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -17919,7 +17986,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -17949,12 +18016,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -17965,7 +18032,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -17995,12 +18062,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18011,7 +18078,7 @@
           "name": "Wera",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -18041,12 +18108,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -18057,7 +18124,7 @@
           "name": "Wera",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18092,8 +18159,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Weiss",
@@ -18105,7 +18172,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "null",
           "color": "Kastanie",
           "score": "34",
@@ -18143,8 +18210,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Kastanie",
@@ -18200,8 +18267,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18246,8 +18313,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "0",
           "color": "Lila",
@@ -18259,7 +18326,7 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "0",
           "color": "Grün",
           "score": "113",
@@ -18297,23 +18364,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
           "score": "13",
-          "new": "0",
-          "rating": "0",
-          "win": "0"
-        },
-        {
-          "username": "",
-          "userid": "0",
-          "name": "Wera",
-          "startposition": "null",
-          "color": "",
-          "score": "18",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18328,6 +18384,17 @@
           "new": "0",
           "rating": "0",
           "win": "1"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Wera",
+          "startposition": "null",
+          "color": "",
+          "score": "18",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
         }
       ]
     }
@@ -18354,8 +18421,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18411,8 +18478,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18667,8 +18734,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Kastanie",
@@ -18713,8 +18780,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18759,8 +18826,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18816,23 +18883,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
           "score": "202",
-          "new": "0",
-          "rating": "0",
-          "win": "0"
-        },
-        {
-          "username": "",
-          "userid": "0",
-          "name": "Wera",
-          "startposition": "null",
-          "color": "",
-          "score": "195",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18847,6 +18903,17 @@
           "new": "0",
           "rating": "0",
           "win": "1"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Wera",
+          "startposition": "null",
+          "color": "",
+          "score": "195",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
         }
       ]
     }
@@ -18878,12 +18945,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -18891,10 +18958,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18906,7 +18973,7 @@
     "id": "56647246",
     "date": "2021-12-25",
     "quantity": "1",
-    "length": "0",
+    "length": "45",
     "incomplete": "0",
     "nowinstats": "0",
     "location": "home",
@@ -18924,8 +18991,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -18937,10 +19004,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Wera",
-          "startposition": "null",
+          "name": "Sofie",
+          "startposition": "1",
           "color": "",
-          "score": "149",
+          "score": "163",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18948,10 +19015,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Sofie",
-          "startposition": "1",
+          "name": "Wera",
+          "startposition": "null",
           "color": "",
-          "score": "163",
+          "score": "149",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -18981,12 +19048,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Kastanie",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -18994,10 +19061,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "null",
           "color": "Grün",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19027,12 +19094,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Kastanie",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19043,7 +19110,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "Grün",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19073,8 +19140,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "Kastanie",
@@ -19119,8 +19186,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -19186,7 +19253,7 @@
           "name": "Bettina",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19197,18 +19264,18 @@
           "name": "Finn",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19219,7 +19286,7 @@
           "name": "Wera",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19254,8 +19321,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
@@ -19305,12 +19372,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19321,7 +19388,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19332,7 +19399,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19367,8 +19434,8 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "0",
           "color": "",
@@ -19418,12 +19485,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19434,7 +19501,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19474,7 +19541,7 @@
           "name": "Bettina",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19485,18 +19552,18 @@
           "name": "Finn",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19507,7 +19574,7 @@
           "name": "Wera",
           "startposition": "1",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19634,12 +19701,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19650,7 +19717,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19731,7 +19798,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19739,21 +19806,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19764,7 +19831,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19804,7 +19871,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19812,21 +19879,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19837,7 +19904,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19867,12 +19934,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "1",
           "color": "Lila",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19880,10 +19947,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Wera",
-          "startposition": "3",
-          "color": "Rot",
-          "score": "null",
+          "name": "Salome",
+          "startposition": "4",
+          "color": "Weiss",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19894,7 +19961,7 @@
           "name": "Sofie",
           "startposition": "2",
           "color": "Kastanie",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19902,10 +19969,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Salome",
-          "startposition": "4",
-          "color": "Weiss",
-          "score": "null",
+          "name": "Wera",
+          "startposition": "3",
+          "color": "Rot",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19935,12 +20002,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "0",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -19948,10 +20015,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "0",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -19986,12 +20053,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20002,7 +20069,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20262,12 +20329,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "0",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20275,10 +20342,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "0",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20318,7 +20385,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20326,21 +20393,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20351,7 +20418,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20362,7 +20429,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20397,7 +20464,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20405,21 +20472,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20430,7 +20497,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20441,7 +20508,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20476,7 +20543,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20484,21 +20551,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20509,7 +20576,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20520,7 +20587,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20560,7 +20627,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20571,7 +20638,7 @@
           "name": "Christian",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20579,21 +20646,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20604,7 +20671,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20615,7 +20682,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20645,23 +20712,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
-          "new": "0",
-          "rating": "0",
-          "win": "0"
-        },
-        {
-          "username": "",
-          "userid": "0",
-          "name": "Wera",
-          "startposition": "null",
-          "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20672,10 +20728,21 @@
           "name": "TT",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Wera",
+          "startposition": "null",
+          "color": "",
+          "score": "",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
         }
       ]
     }
@@ -20702,12 +20769,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20715,10 +20782,10 @@
         {
           "username": "",
           "userid": "0",
-          "name": "wera",
+          "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20794,12 +20861,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
@@ -20810,7 +20877,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20891,7 +20958,7 @@
           "name": "Bettina",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20899,21 +20966,21 @@
         {
           "username": "",
           "userid": "0",
-          "name": "Fin",
+          "name": "Finn",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
         },
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20924,7 +20991,7 @@
           "name": "Sofie",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -20935,7 +21002,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -21077,7 +21144,7 @@
     "id": "55631474",
     "date": "2021-11-14",
     "quantity": "1",
-    "length": "0",
+    "length": "45",
     "incomplete": "0",
     "nowinstats": "0",
     "location": "home",
@@ -21095,23 +21162,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "0",
           "color": "",
-          "score": "null",
-          "new": "0",
-          "rating": "0",
-          "win": "0"
-        },
-        {
-          "username": "",
-          "userid": "0",
-          "name": "Wera",
-          "startposition": "0",
-          "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -21122,10 +21178,21 @@
           "name": "Sofie",
           "startposition": "0",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
+        },
+        {
+          "username": "",
+          "userid": "0",
+          "name": "Wera",
+          "startposition": "0",
+          "color": "",
+          "score": "",
+          "new": "0",
+          "rating": "0",
+          "win": "0"
         }
       ]
     }
@@ -21152,12 +21219,12 @@
     "players": {
       "player": [
         {
-          "username": "",
-          "userid": "0",
+          "username": "gismo42",
+          "userid": "2587291",
           "name": "Gremmel",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "0"
@@ -21168,7 +21235,7 @@
           "name": "Wera",
           "startposition": "null",
           "color": "",
-          "score": "null",
+          "score": "",
           "new": "0",
           "rating": "0",
           "win": "1"
