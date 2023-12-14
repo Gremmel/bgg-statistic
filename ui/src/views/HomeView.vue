@@ -16,6 +16,14 @@
       <li class="nav-item">
         <a
           class="nav-link text-secondary"
+          :class="{'active text-light bg-secondary': status.tabView === 'collection'}"
+          href="#"
+          @click="tabViewClick('collection')"
+        >Sammlung</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link text-secondary"
           :class="{'active text-light bg-secondary': status.tabView === 'plays'}"
           href="#"
           @click="tabViewClick('plays')"
@@ -60,6 +68,68 @@
               class="form-check-label"
               :for="key"
             >{{ player.name }}</label>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="container bg-dark" v-show="status.tabView === 'collection'">
+      <ol class="list-group">
+        <li
+          v-for="collectionItem in collection"
+          :key="collectionItem.collid"
+          class="list-group-item list-group-item-plays text-light bg-dark"
+        >
+          <div class="row" data-bs-toggle="collapse" :data-bs-target="'#collapse' + collectionItem.collid" aria-expanded="false" :aria-controls="'collapse' + collectionItem.collid">
+            <div class="col-auto text-start" style="min-width: 100px;">
+              <img
+                :src="collectionItem.thumbnail"
+                class="thumbnail"
+                alt="thumbnail"
+                data-bs-toggle="collapse"
+                :data-bs-target="'#collapse' + collectionItem.collid"
+                aria-expanded="false"
+                :aria-controls="'collapse' + collectionItem.collid"
+              ><br>
+              <span
+                v-if="collectionItem.status.own == '1'"
+                class="badge rounded-pill text-bg-success"
+              >
+                Own
+              </span>
+            </div>
+            <div class="col text-start">
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col p-0">
+                      <span style="font-weight: bold;">{{ collectionItem.name.text }}</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    Jahr: {{ collectionItem.yearpublished }}
+                  </div>
+                  <div v-if="collectionItem.numplays > 0" class="row">
+                    gespielt: {{ collectionItem.numplays }}
+                  </div>
+                  <div v-if="collectionItem.statistics" class="col">
+                    <div class="card bg-dark border-success">
+                      <div class="card-body pt-1 pb-1">
+                        <div class="row">
+                          Bewertung: {{ Math.round(collectionItem.statistics.ratings.average.value * 10) / 10 }} ({{ collectionItem.statistics.ratings.usersrated.value }})
+                        </div>
+                        <div class="row">
+                          Komplexität: {{ Math.round(collectionItem.statistics.ratings.averageweight.value * 10) / 10 }} ({{ collectionItem.statistics.ratings.numweights.value }})
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Aufklappbare zusatzinfo -->
+              <div :id="'collapse' + collectionItem.collid">
+              </div>
+            </div>
           </div>
         </li>
       </ol>
@@ -235,7 +305,8 @@
 
     <div class="bg-dark text-light" v-show="status.tabView === 'bgg'">
       <div class="container text-center">
-        <button :disabled="disableBtnDownload" @click="clickDownloadPlays()" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden</button><br>
+        <button :disabled="disableBtnDownload" @click="clickDownloadPlays(false)" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden (ab Gestern)</button><br>
+        <button :disabled="disableBtnDownload" @click="clickDownloadPlays(true)" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden (alle)</button><br>
         <button :disabled="disableBtnDownload" @click="clickDownloadCatalog()" type="button" class="btn btn-secondary mt-2">Sammlung neu von BGG Laden</button>
       </div>
       <div v-if="downloadProgressStyle !== ''" class="progress m-4" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -299,6 +370,21 @@ export default {
     }
   },
   computed: {
+    collection () {
+      const res = [];
+
+      if (this.statistic.collection && this.statistic.collection.item) {
+        for (const item of this.statistic.collection.item) {
+          if (item.numplays > 0) {
+            res.push(item);
+          }
+        }
+
+        return res;
+      }
+
+      return [];
+    },
     downloadProgressStyle () {
       let str = '';
 
@@ -314,6 +400,8 @@ export default {
       for (const key in this.statistic.players) {
         if (Object.hasOwnProperty.call(this.statistic.players, key)) {
           const player = this.statistic.players[key];
+
+          player.points = Math.round(player.points * 10) / 10;
 
           unsorted.push(player);
         }
@@ -342,9 +430,9 @@ export default {
     }
   },
   methods: {
-    clickDownloadPlays () {
+    clickDownloadPlays (all) {
       this.disableBtnDownload = true;
-      this.toServer('downloadPlays');
+      this.toServer('downloadPlays', all);
     },
     clickDownloadCatalog () {
       this.disableBtnDownload = true;

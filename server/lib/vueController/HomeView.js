@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 /* eslint-disable no-undef */
 'use strict';
 
@@ -131,6 +132,26 @@ const HomeView = {
     return match;
   },
 
+  async addStatisticsToCollection (objectid) {
+    logger.info('addStatisticsToCollection objectid', objectid);
+    const gameInfo = await this.bgg.getGameData(objectid);
+
+    // statistic der collection hinzufügen
+    if (gameInfo) {
+      for (const item of this.collection.item) {
+        if (item.objectid === objectid) {
+          item.statistics = gameInfo.item.statistics;
+        }
+      }
+    }
+
+    await fs.writeJSON(path.join(__extdir, 'collection.json'), this.collection, { spaces: 2 });
+
+    // process.exit(0);
+
+    return gameInfo.item.statistics;
+  },
+
   async getCollectionData (play) {
     return new Promise(async (resolve, reject) => {
       try {
@@ -143,6 +164,14 @@ const HomeView = {
         for (const item of this.collection.item) {
           if (item.objectid === play.item.objectid) {
             res = item;
+
+            // überprüfen ob für dieses Spiel schon die stats hinterlegt sind
+            if (!res.statistics) {
+              logger.info('addStatisticsToCollection play.item.name', play.item.name);
+
+              // stats von bgg abrufen und hinzufügen
+              res.statistics = await this.addStatisticsToCollection(res.objectid);
+            }
           }
         }
 
@@ -221,6 +250,10 @@ const HomeView = {
 
                     player.points += points;
 
+                    // logger.info('player player.name', player.name);
+                    // logger.info('player player.points', player.points);
+                    // logger.info('player spiel', play.item.name);
+
                     // punkte auch in partie reinschreiben
                     for (const pplayer of play.players.player) {
                       if (pplayer.name.toLowerCase() === name) {
@@ -241,6 +274,7 @@ const HomeView = {
           }
         }
 
+        statistic.collection = this.collection;
         resolve(statistic);
       } catch (error) {
         reject(error);
@@ -248,77 +282,105 @@ const HomeView = {
     });
   },
 
+  berPoints (length, weight, score, maxScore) {
+    const factorLength = 0.42;
+    const factorWeight = 0.42;
+
+    const pLength = length / 60.0 * factorLength;
+    const pWeight = weight * factorWeight;
+
+    let erg = pLength + pWeight;
+
+    erg *= score / maxScore;
+    erg = Math.round(erg * 1000) / 1000;
+
+    return erg;
+  },
+
   getPlayerPoints (name, play) {
-    const numPlayer = play.players.player.length;
     const gPlayers = play.players.player;
     let playerData;
     let points = 0;
+    let weight = 1;
+    let maxScore = 0;
+    let minScore = 999999;
+    let noScore = true;
+    let scoreCount = 0;
 
     // score von dem spieler
     let pScore;
 
     for (const gp of gPlayers) {
-      if (gp.name.toLowerCase() === name) {
-        playerData = gp;
-      }
-      if (gp.name.toLowerCase() === name && gp.score !== '') {
-        pScore = gp.score;
+      if (gp.score !== '' && gp.score !== null && gp.score !== undefined && gp.score !== 'null') {
+        scoreCount += 1;
+
+        const sc = Number(gp.score);
+
+        if (sc > maxScore) {
+          maxScore = sc;
+        }
+        if (sc < minScore) {
+          minScore = sc;
+        }
+        if (gp.name.toLowerCase() === name) {
+          playerData = gp;
+        }
+        if (gp.name.toLowerCase() === name && gp.score !== '') {
+          pScore = Number(gp.score);
+        }
+      } else {
+        if (gp.name.toLowerCase() === name) {
+          playerData = gp;
+        }
       }
     }
 
-    // wenn spieldauer unter 30 min dann gibts nur einen halben punkt für den sieg
-    if (play.length < 30) {
-      // eslint-disable-next-line eqeqeq
-      if (playerData.win == '1') {
-        points = 0.5;
-      } else {
-        // ansonsten null punkte
-        points = 0;
-      }
-    } else if (pScore === undefined || pScore === 'null') {
-      // wenn kein score
-      // wenn Spieler gewonnen hat
-      // eslint-disable-next-line eqeqeq
-      if (playerData.win == '1') {
-        points = 3;
-      } else {
-        // ansonsten null punkte
-        points = 0;
-      }
-    // eslint-disable-next-line eqeqeq
-    } else if (playerData.win == '1') {
-      // wenn Spieler gewonnen hat dann punkte (anzahl Spieler minus 1)
-      points = 3;
-    } else if (this.checkMaxPointsWin(gPlayers)) {
-      // platzierung ermitteln
-      for (const gp of gPlayers) {
-        if (gp.name.toLowerCase() !== name && Number(pScore) >= Number(gp.score) && gp.win !== '1') {
-          points += 1;
-        }
-      }
+    if (scoreCount === gPlayers.length) {
+      noScore = false;
+    }
 
-      // zweiter Platz
-      if (points === numPlayer - 2) {
-        points = 2;
-        if (numPlayer === 2) {
-          points = 0;
-        }
-      } else if (points === numPlayer - 3) {
-        // dritter Platz
-        points = 1;
-        if (numPlayer === 3) {
-          points = 0;
-        }
+    if (play.collection.statistics) {
+      // logger.info(' averageweight', play.collection.statistics.ratings.averageweight.value);
+      weight = play.collection.statistics.ratings.averageweight.value;
+    }
+
+    if (noScore) {
+      // wenn kein score
+
+      // wenn Spieler gewonnen hat
+      if (playerData.win === '1') {
+        points = this.berPoints(play.length, weight, 100, 100);
       } else {
-        points = 0;
+        // ansonsten halbe punkte
+        points = this.berPoints(play.length, weight, 50, 100);
       }
     } else {
-      for (const gp of gPlayers) {
-        if (gp.name.toLowerCase() !== name && Number(pScore) <= Number(gp.score)) {
-          points += 1;
+      // platzierung ermitteln
+      if (this.checkMaxPointsWin(gPlayers)) {
+        let offset = 0;
+
+        if (minScore <= 0) {
+          offset = (minScore * -1) + 1;
+          logger.error('score ist unter null', minScore, offset);
+          logger.warn('score', pScore);
         }
+
+        // wenn maximale punktezahl gewinnt
+        // logger.warn(' pScore', pScore);
+        // logger.warn('maxScore', maxScore);
+        if (playerData.win === '0' && pScore === maxScore) {
+          // logger.warn('gleiche Punktzahl aber nicht gewonnen');
+          points = this.berPoints(play.length, weight, pScore - 1 + offset, maxScore + offset);
+        } else {
+          points = this.berPoints(play.length, weight, pScore + offset, maxScore + offset);
+        }
+      } else {
+        logger.info('kleine punktzahl gilt', play.item.name);
       }
     }
+
+    // logger.fatal('name playerData.name', playerData.name);
+    // logger.warn('points', points);
 
     return points;
   },
@@ -347,9 +409,9 @@ const HomeView = {
     return winMax;
   },
 
-  async downloadPlays (ioClient) {
-    logger.fatal('downloadPlays');
-    await this.bgg.getPlayData((value, total) => {
+  async downloadPlays (ioClient, payload) {
+    logger.fatal('downloadPlays', payload);
+    await this.bgg.getPlayData(payload, (value, total) => {
       ioClient.emit('statusGetPlayData', { value, total });
     });
     this.plays = undefined;

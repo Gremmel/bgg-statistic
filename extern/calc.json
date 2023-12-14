@@ -15,6 +15,21 @@
         ]
       }
     },
+    "41": {
+      "name": "Can&#039;t Stop",
+      "objecttype": "thing",
+      "objectid": "41",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
     "433": {
       "name": "Shark",
       "objecttype": "thing",
@@ -53,6 +68,21 @@
         "subtype": {
           "value": "boardgame"
         }
+      }
+    },
+    "2651": {
+      "name": "Power Grid",
+      "objecttype": "thing",
+      "objectid": "2651",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
       }
     },
     "2818": {
@@ -110,6 +140,16 @@
         }
       }
     },
+    "28143": {
+      "name": "Race for the Galaxy",
+      "objecttype": "thing",
+      "objectid": "28143",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "31260": {
       "name": "Agricola",
       "objecttype": "thing",
@@ -128,6 +168,21 @@
         "subtype": {
           "value": "boardgame"
         }
+      }
+    },
+    "39856": {
+      "name": "Dixit",
+      "objecttype": "thing",
+      "objectid": "39856",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "42215": {
@@ -219,6 +274,21 @@
       "name": "King of Tokyo",
       "objecttype": "thing",
       "objectid": "70323",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "93472": {
+      "name": "Ubongo: Das Kartenspiel",
+      "objecttype": "thing",
+      "objectid": "93472",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -345,6 +415,16 @@
         ]
       }
     },
+    "136888": {
+      "name": "Bruges",
+      "objecttype": "thing",
+      "objectid": "136888",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "148949": {
       "name": "Istanbul",
       "objecttype": "thing",
@@ -363,6 +443,21 @@
         "subtype": {
           "value": "boardgame"
         }
+      }
+    },
+    "158899": {
+      "name": "Colt Express",
+      "objecttype": "thing",
+      "objectid": "158899",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "161970": {
@@ -538,8 +633,18 @@
         ]
       }
     },
+    "187645": {
+      "name": "Star Wars: Rebellion",
+      "objecttype": "thing",
+      "objectid": "187645",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "188866": {
-      "name": "Awkward Guests",
+      "name": "Awkward Guests: The Walton Case",
       "objecttype": "thing",
       "objectid": "188866",
       "subtypes": {
@@ -603,6 +708,16 @@
         ]
       }
     },
+    "207830": {
+      "name": "5-Minute Dungeon",
+      "objecttype": "thing",
+      "objectid": "207830",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "209010": {
       "name": "Mechs vs. Minions",
       "objecttype": "thing",
@@ -618,9 +733,17 @@
       "objecttype": "thing",
       "objectid": "209450",
       "subtypes": {
-        "subtype": {
-          "value": "boardgame"
-        }
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "209778": {
@@ -666,6 +789,16 @@
             "value": "boardgameimplementation"
           }
         ]
+      }
+    },
+    "220877": {
+      "name": "Rajas of the Ganges",
+      "objecttype": "thing",
+      "objectid": "220877",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
       }
     },
     "223040": {
@@ -717,6 +850,16 @@
       "name": "Pulsar 2849",
       "objecttype": "thing",
       "objectid": "228341",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "229853": {
+      "name": "Teotihuacan: City of Gods",
+      "objecttype": "thing",
+      "objectid": "229853",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -798,6 +941,16 @@
         }
       }
     },
+    "239472": {
+      "name": "Abomination: The Heir of Frankenstein",
+      "objecttype": "thing",
+      "objectid": "239472",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "241266": {
       "name": "Little Town",
       "objecttype": "thing",
@@ -848,6 +1001,26 @@
         }
       }
     },
+    "244711": {
+      "name": "Newton",
+      "objecttype": "thing",
+      "objectid": "244711",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "246784": {
+      "name": "Cryptid",
+      "objecttype": "thing",
+      "objectid": "246784",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "246900": {
       "name": "Eclipse: Second Dawn for the Galaxy",
       "objecttype": "thing",
@@ -877,6 +1050,26 @@
       "name": "Gùgōng",
       "objecttype": "thing",
       "objectid": "250458",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "251247": {
+      "name": "Barrage",
+      "objecttype": "thing",
+      "objectid": "251247",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "258206": {
+      "name": "Bears&amp;Bees",
+      "objecttype": "thing",
+      "objectid": "258206",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1033,15 +1226,55 @@
       "objecttype": "thing",
       "objectid": "277458",
       "subtypes": {
-        "subtype": {
-          "value": "boardgame"
-        }
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "280480": {
       "name": "Crystal Palace",
       "objecttype": "thing",
       "objectid": "280480",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "281442": {
+      "name": "Trismegistus: The Ultimate Formula",
+      "objecttype": "thing",
+      "objectid": "281442",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "281466": {
+      "name": "Yedo: Deluxe Master Set",
+      "objecttype": "thing",
+      "objectid": "281466",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "281549": {
+      "name": "Beast",
+      "objecttype": "thing",
+      "objectid": "281549",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1061,6 +1294,16 @@
             "value": "boardgameimplementation"
           }
         ]
+      }
+    },
+    "284653": {
+      "name": "Mind MGMT: The Psychic Espionage “Game.”",
+      "objecttype": "thing",
+      "objectid": "284653",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
       }
     },
     "284936": {
@@ -1083,6 +1326,31 @@
         }
       }
     },
+    "287589": {
+      "name": "Red Outpost",
+      "objecttype": "thing",
+      "objectid": "287589",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "290359": {
+      "name": "Undaunted: North Africa",
+      "objecttype": "thing",
+      "objectid": "290359",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
     "291859": {
       "name": "Riftforce",
       "objecttype": "thing",
@@ -1093,10 +1361,50 @@
         }
       }
     },
+    "291874": {
+      "name": "Dwergar",
+      "objecttype": "thing",
+      "objectid": "291874",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "295607": {
       "name": "Canopy",
       "objecttype": "thing",
       "objectid": "295607",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "295895": {
+      "name": "Distilled",
+      "objecttype": "thing",
+      "objectid": "295895",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "295947": {
+      "name": "Cascadia",
+      "objecttype": "thing",
+      "objectid": "295947",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "297030": {
+      "name": "Tekhenu: Obelisk of the Sun",
+      "objecttype": "thing",
+      "objectid": "297030",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1138,6 +1446,21 @@
         }
       }
     },
+    "298229": {
+      "name": "Steampunk Rally Fusion",
+      "objecttype": "thing",
+      "objectid": "298229",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
     "298383": {
       "name": "Golem",
       "objecttype": "thing",
@@ -1171,6 +1494,26 @@
             "value": "boardgameimplementation"
           }
         ]
+      }
+    },
+    "299960": {
+      "name": "Alma Mater",
+      "objecttype": "thing",
+      "objectid": "299960",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "299963": {
+      "name": "Picture Perfect",
+      "objecttype": "thing",
+      "objectid": "299963",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
       }
     },
     "300583": {
@@ -1223,9 +1566,14 @@
       "objecttype": "thing",
       "objectid": "305682",
       "subtypes": {
-        "subtype": {
-          "value": "boardgame"
-        }
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "306040": {
@@ -1263,6 +1611,16 @@
         }
       }
     },
+    "308765": {
+      "name": "Praga Caput Regni",
+      "objecttype": "thing",
+      "objectid": "308765",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "310873": {
       "name": "Carnegie",
       "objecttype": "thing",
@@ -1288,9 +1646,14 @@
       "objecttype": "thing",
       "objectid": "316554",
       "subtypes": {
-        "subtype": {
-          "value": "boardgame"
-        }
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
       }
     },
     "316858": {
@@ -1316,6 +1679,16 @@
             "value": "boardgameimplementation"
           }
         ]
+      }
+    },
+    "317411": {
+      "name": "Florence",
+      "objecttype": "thing",
+      "objectid": "317411",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
       }
     },
     "317985": {
@@ -1378,10 +1751,50 @@
         ]
       }
     },
+    "321608": {
+      "name": "Hegemony: Lead Your Class to Victory",
+      "objecttype": "thing",
+      "objectid": "321608",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "322289": {
+      "name": "Darwin&#039;s Journey",
+      "objecttype": "thing",
+      "objectid": "322289",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "322623": {
       "name": "Clockworker",
       "objecttype": "thing",
       "objectid": "322623",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "323612": {
+      "name": "Bitoku",
+      "objecttype": "thing",
+      "objectid": "323612",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "324090": {
+      "name": "Scarface 1920",
+      "objecttype": "thing",
+      "objectid": "324090",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1411,6 +1824,16 @@
             "value": "boardgameimplementation"
           }
         ]
+      }
+    },
+    "328479": {
+      "name": "Living Forest",
+      "objecttype": "thing",
+      "objectid": "328479",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
       }
     },
     "329082": {
@@ -1494,7 +1917,7 @@
       }
     },
     "336794": {
-      "name": "Galaxy Trucker",
+      "name": "Galaxy Trucker (Second Edition)",
       "objecttype": "thing",
       "objectid": "336794",
       "subtypes": {
@@ -1508,6 +1931,16 @@
         ]
       }
     },
+    "338760": {
+      "name": "Imperial Steam",
+      "objecttype": "thing",
+      "objectid": "338760",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "339958": {
       "name": "Gutenberg",
       "objecttype": "thing",
@@ -1519,9 +1952,34 @@
       }
     },
     "341169": {
-      "name": "Great Western Trail (Second Edition)",
+      "name": "Great Western Trail: Second Edition",
       "objecttype": "thing",
       "objectid": "341169",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "341530": {
+      "name": "Super Mega Lucky Box",
+      "objecttype": "thing",
+      "objectid": "341530",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "341945": {
+      "name": "La Granja: Deluxe Master Set",
+      "objecttype": "thing",
+      "objectid": "341945",
       "subtypes": {
         "subtype": [
           {
@@ -1543,20 +2001,80 @@
         }
       }
     },
-    "345584": {
-      "name": "Mindbug: First Contact",
+    "343334": {
+      "name": "Schichtwechsel: Die Förderung liegt in deiner Hand",
       "objecttype": "thing",
-      "objectid": "345584",
+      "objectid": "343334",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
         }
       }
     },
+    "345377": {
+      "name": "Virtù",
+      "objecttype": "thing",
+      "objectid": "345377",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "345584": {
+      "name": "Mindbug: First Contact",
+      "objecttype": "thing",
+      "objectid": "345584",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "345868": {
+      "name": "Federation",
+      "objecttype": "thing",
+      "objectid": "345868",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "345976": {
+      "name": "System Gateway (fan expansion for Android: Netrunner)",
+      "objecttype": "thing",
+      "objectid": "345976",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
     "346501": {
       "name": "Mille Fiori",
       "objecttype": "thing",
       "objectid": "346501",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "348450": {
+      "name": "Lacrimosa",
+      "objecttype": "thing",
+      "objectid": "348450",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1573,6 +2091,16 @@
         }
       }
     },
+    "350184": {
+      "name": "Earth",
+      "objecttype": "thing",
+      "objectid": "350184",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "350458": {
       "name": "Terracotta Army",
       "objecttype": "thing",
@@ -1583,10 +2111,90 @@
         }
       }
     },
+    "351526": {
+      "name": "Encyclopedia",
+      "objecttype": "thing",
+      "objectid": "351526",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "351913": {
       "name": "Tiletum",
       "objecttype": "thing",
       "objectid": "351913",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "354132": {
+      "name": "East India Companies",
+      "objecttype": "thing",
+      "objectid": "354132",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "355093": {
+      "name": "Woodcraft",
+      "objecttype": "thing",
+      "objectid": "355093",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "356033": {
+      "name": "Libertalia: Winds of Galecrest",
+      "objecttype": "thing",
+      "objectid": "356033",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "359438": {
+      "name": "Skymines",
+      "objecttype": "thing",
+      "objectid": "359438",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "360206": {
+      "name": "Discordia",
+      "objecttype": "thing",
+      "objectid": "360206",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "360692": {
+      "name": "Septima",
+      "objecttype": "thing",
+      "objectid": "360692",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1613,6 +2221,31 @@
         }
       }
     },
+    "362986": {
+      "name": "Tribes of the Wind",
+      "objecttype": "thing",
+      "objectid": "362986",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "363622": {
+      "name": "The Castles of Burgundy: Special Edition",
+      "objecttype": "thing",
+      "objectid": "363622",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgamecompilation"
+          }
+        ]
+      }
+    },
     "363699": {
       "name": "Finding Atlantis",
       "objecttype": "thing",
@@ -1632,17 +2265,132 @@
           "value": "boardgame"
         }
       }
+    },
+    "368954": {
+      "name": "Council of Shadows",
+      "objecttype": "thing",
+      "objectid": "368954",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "370130": {
+      "name": "GAP",
+      "objecttype": "thing",
+      "objectid": "370130",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "370591": {
+      "name": "Dorfromantik: The Board Game",
+      "objecttype": "thing",
+      "objectid": "370591",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "371942": {
+      "name": "The White Castle",
+      "objecttype": "thing",
+      "objectid": "371942",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "377873": {
+      "name": "New Eden",
+      "objecttype": "thing",
+      "objectid": "377873",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "378604": {
+      "name": "Tiere toppen!",
+      "objecttype": "thing",
+      "objectid": "378604",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          },
+          {
+            "value": "boardgameintegration"
+          }
+        ]
+      }
+    },
+    "385610": {
+      "name": "Kutná Hora: The City of Silver",
+      "objecttype": "thing",
+      "objectid": "385610",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "388329": {
+      "name": "Waypoints",
+      "objecttype": "thing",
+      "objectid": "388329",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "389102": {
+      "name": "Bier Pioniere",
+      "objecttype": "thing",
+      "objectid": "389102",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "396790": {
+      "name": "Nucleum",
+      "objecttype": "thing",
+      "objectid": "396790",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "400205": {
+      "name": "5 Towers",
+      "objecttype": "thing",
+      "objectid": "400205",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
     }
   },
   "players": {
-    "bettina": {
-      "name": "Bettina",
-      "id": "0"
-    },
-    "finn": {
-      "name": "Finn",
-      "id": "0"
-    },
     "gremmel": {
       "name": "Gremmel",
       "id": "2587291"
@@ -1651,12 +2399,56 @@
       "name": "Wera",
       "id": "0"
     },
+    "bettina": {
+      "name": "Bettina",
+      "id": "0"
+    },
+    "finn": {
+      "name": "Finn",
+      "id": "0"
+    },
     "sofie": {
       "name": "Sofie",
       "id": "0"
     },
+    "sabine j.": {
+      "name": "Sabine J.",
+      "id": "0"
+    },
     "salome": {
       "name": "Salome",
+      "id": "0"
+    },
+    "sandra": {
+      "name": "Sandra",
+      "id": "0"
+    },
+    "andrea": {
+      "name": "Andrea",
+      "id": "0"
+    },
+    "joscha": {
+      "name": "Joscha",
+      "id": "0"
+    },
+    "karin": {
+      "name": "Karin",
+      "id": "0"
+    },
+    "anonyme*r spieler*in": {
+      "name": "Anonyme*r Spieler*in",
+      "id": "0"
+    },
+    "michel": {
+      "name": "Michel",
+      "id": "0"
+    },
+    "sabine": {
+      "name": "Sabine",
+      "id": "0"
+    },
+    "tt": {
+      "name": "TT",
       "id": "0"
     },
     "heidi": {
@@ -1685,14 +2477,6 @@
     },
     "christian": {
       "name": "Christian",
-      "id": "0"
-    },
-    "sandra": {
-      "name": "Sandra",
-      "id": "0"
-    },
-    "tt": {
-      "name": "TT",
       "id": "0"
     }
   }
