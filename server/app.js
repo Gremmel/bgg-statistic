@@ -34,7 +34,7 @@ const bgg = require('./lib/bgg');
     // regelmäsig collection data aktuallisieren
     setInterval(() => {
       bgg.refreshCollectionData();
-    }, 10 * 1000);
+    }, 30 * 60 * 1000);
   } catch (error) {
     logger.error(error);
     process.exit(1);

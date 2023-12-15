@@ -365,6 +365,12 @@ const HomeView = {
           logger.warn('score', pScore);
         }
 
+        // Bei Arche Nova werden 60 Punkte hinzugezählt um es gerechter zu machen
+        if (play.item.objectid === '342942') {
+          pScore += 60;
+          maxScore += 60;
+        }
+
         // wenn maximale punktezahl gewinnt
         // logger.warn(' pScore', pScore);
         // logger.warn('maxScore', maxScore);

@@ -114,6 +114,9 @@ const bgg = {
                 if (itemOld.statistics) {
                   item.statistics = itemOld.statistics;
                 }
+                if (itemOld.poll) {
+                  item.poll = itemOld.poll;
+                }
               }
             }
           }
@@ -214,7 +217,7 @@ const bgg = {
         logger.info('getCollction Data from BGG');
 
         // const { data } = await bggClient.get('user', { name: this.user });
-        const { data } = await bggClient.get('collection', { username: this.user }, 10);
+        const { data } = await bggClient.get('collection', { username: this.user, played: 1 }, 10);
 
         this.collectionData = data;
 
@@ -268,6 +271,27 @@ const bgg = {
       }
     }
 
+    // überprüfen ob es noch spiele in der sammlung ohne poll gibt
+    for (const item of this.collectionData.item) {
+      if (!item.poll) {
+        logger.info('keine poll in ', item.name.text);
+
+        // daten abrufen
+        const gameData = await this.getGameData(item.objectid);
+
+        // statistic der collection hinzufügen
+        if (gameData && gameData.item && gameData.item.poll) {
+          item.poll = gameData.item.poll;
+
+          await this.writeCollectionDataToFile(true);
+
+          logger.info('added');
+        }
+
+        break;
+      }
+    }
+
     // ifos der letzen aktuallisierung holden
     let refreshInfo = {
       collectionIndex: 0,
@@ -281,7 +305,7 @@ const bgg = {
     }
 
     // wenn ende erreicht wurde neu anfangen
-    if (refreshInfo.collectionIndex >= this.collectionData.length) {
+    if (refreshInfo.collectionIndex >= this.collectionData.item.length) {
       logger.info('index überlauf setze auf 0');
       refreshInfo.collectionIndex = 0;
     }
