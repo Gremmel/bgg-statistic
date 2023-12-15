@@ -69,5 +69,5 @@
   "config": {
     "playerSearchMode": "exact"
   },
-  "tabView": "plays"
+  "tabView": "collection"
 }

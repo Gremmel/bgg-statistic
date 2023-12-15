@@ -30,6 +30,11 @@ const bgg = require('./lib/bgg');
     socketIo.init(express.server, bgg);
 
     express.start();
+
+    // regelmäsig collection data aktuallisieren
+    setInterval(() => {
+      bgg.refreshCollectionData();
+    }, 10 * 1000);
   } catch (error) {
     logger.error(error);
     process.exit(1);

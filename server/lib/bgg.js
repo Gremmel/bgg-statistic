@@ -100,18 +100,20 @@ const bgg = {
     });
   },
 
-  async writeCollectionDataToFile () {
+  async writeCollectionDataToFile (saveDirect = false) {
     return new Promise(async (resolve, reject) => {
       try {
-        // vor dem speichern die statistiken übernehmen
-        const coll = await fs.readJSON(path.join(__extdir, 'collection.json'));
+        if (!saveDirect) {
+          // vor dem speichern die statistiken übernehmen
+          const coll = await fs.readJSON(path.join(__extdir, 'collection.json'));
 
-        for (const item of this.collectionData.item) {
-          // entsprechendes item in vorhandenem entnehmen und statistic übernehmen
-          for (const itemOld of coll.item) {
-            if (item.objectid === itemOld.objectid) {
-              if (itemOld.statistics) {
-                item.statistics = itemOld.statistics;
+          for (const item of this.collectionData.item) {
+            // entsprechendes item in vorhandenem entnehmen und statistic übernehmen
+            for (const itemOld of coll.item) {
+              if (item.objectid === itemOld.objectid) {
+                if (itemOld.statistics) {
+                  item.statistics = itemOld.statistics;
+                }
               }
             }
           }
@@ -142,6 +144,7 @@ const bgg = {
   async loadCollectionData () {
     return new Promise(async (resolve, reject) => {
       try {
+        logger.info('bgg - load Collection Data');
         // eslint-disable-next-line no-undef
         this.collectionData = await fs.readJSON(path.join(__extdir, 'collection.json'));
         resolve();
@@ -235,6 +238,84 @@ const bgg = {
         reject(error);
       }
     });
+  },
+
+  async refreshCollectionData () {
+    logger.fatal('refresh');
+
+    if (!this.collectionData) {
+      await this.loadCollectionData();
+    }
+
+    // überprüfen ob es noch spiele in der sammlung ohne statistic gibt
+    for (const item of this.collectionData.item) {
+      if (!item.statistics) {
+        logger.info('keine statistic in ', item.name.text);
+
+        // daten abrufen
+        const gameData = await this.getGameData(item.objectid);
+
+        // statistic der collection hinzufügen
+        if (gameData && gameData.item && gameData.item.statistics) {
+          item.statistics = gameData.item.statistics;
+
+          await this.writeCollectionDataToFile(true);
+
+          logger.info('added');
+        }
+
+        break;
+      }
+    }
+
+    // ifos der letzen aktuallisierung holden
+    let refreshInfo = {
+      collectionIndex: 0,
+      lastCollectionItem: {}
+    };
+
+    try {
+      refreshInfo = await fs.readJSON(path.join(__extdir, 'refreshInfo.json'));
+    } catch (error) {
+      logger.warn('keine alte refreshInfo', error);
+    }
+
+    // wenn ende erreicht wurde neu anfangen
+    if (refreshInfo.collectionIndex >= this.collectionData.length) {
+      logger.info('index überlauf setze auf 0');
+      refreshInfo.collectionIndex = 0;
+    }
+
+    const collectionItem = this.collectionData.item[refreshInfo.collectionIndex];
+
+    if (collectionItem && collectionItem.objectid) {
+      logger.info('rufe aktuelle daten ab ', collectionItem.name.text);
+
+      // daten abrufen
+      const gameData = await this.getGameData(collectionItem.objectid);
+
+      // statistic und poll der collection hinzufügen
+      if (gameData && gameData.item && gameData.item.statistics) {
+        collectionItem.statistics = gameData.item.statistics;
+
+        if (gameData.item.poll) {
+          collectionItem.poll = gameData.item.poll;
+        }
+
+        await this.writeCollectionDataToFile(true);
+
+        refreshInfo.collectionIndex += 1;
+        refreshInfo.lastCollectionItem = gameData;
+
+        try {
+          await fs.writeJSON(path.join(__extdir, 'refreshInfo.json'), refreshInfo, { spaces: 2 });
+        } catch (error) {
+          logger.error('Fehler beim schreiben der refreshinfo', error);
+        }
+
+        logger.info('added');
+      }
+    }
   }
 
 };
