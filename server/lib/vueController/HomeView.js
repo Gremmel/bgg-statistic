@@ -382,6 +382,14 @@ const HomeView = {
         }
       } else {
         logger.info('kleine punktzahl gilt', play.item.name);
+
+        // wenn Spieler gewonnen hat
+        if (playerData.win === '1') {
+          points = this.berPoints(play.length, weight, 100, 100);
+        } else {
+          // ansonsten halbe punkte
+          points = this.berPoints(play.length, weight, 50, 100);
+        }
       }
     }
 
