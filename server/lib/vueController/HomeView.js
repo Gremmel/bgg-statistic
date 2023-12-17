@@ -381,8 +381,6 @@ const HomeView = {
           points = this.berPoints(play.length, weight, pScore + offset, maxScore + offset);
         }
       } else {
-        logger.info('kleine punktzahl gilt', play.item.name);
-
         // wenn Spieler gewonnen hat
         if (playerData.win === '1') {
           points = this.berPoints(play.length, weight, 100, 100);
@@ -429,6 +427,7 @@ const HomeView = {
       ioClient.emit('statusGetPlayData', { value, total });
     });
     this.plays = undefined;
+    this.collection = await this.loadCollection();
     ioClient.emit('downloadFinished');
   },
 

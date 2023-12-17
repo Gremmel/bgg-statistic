@@ -776,6 +776,21 @@
         }
       }
     },
+    "217261": {
+      "name": "Bohnanza: 20 Jahre",
+      "objecttype": "thing",
+      "objectid": "217261",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
     "220520": {
       "name": "Caverna: Cave vs Cave",
       "objecttype": "thing",
@@ -1005,6 +1020,16 @@
       "name": "Newton",
       "objecttype": "thing",
       "objectid": "244711",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
+    "245934": {
+      "name": "Carpe Diem",
+      "objecttype": "thing",
+      "objectid": "245934",
       "subtypes": {
         "subtype": {
           "value": "boardgame"
@@ -1641,6 +1666,16 @@
         }
       }
     },
+    "313439": {
+      "name": "Tribunal 1920",
+      "objecttype": "thing",
+      "objectid": "313439",
+      "subtypes": {
+        "subtype": {
+          "value": "boardgame"
+        }
+      }
+    },
     "316554": {
       "name": "Dune: Imperium",
       "objecttype": "thing",
@@ -2177,6 +2212,21 @@
           },
           {
             "value": "boardgameimplementation"
+          }
+        ]
+      }
+    },
+    "359970": {
+      "name": "Challengers!",
+      "objecttype": "thing",
+      "objectid": "359970",
+      "subtypes": {
+        "subtype": [
+          {
+            "value": "boardgame"
+          },
+          {
+            "value": "boardgameintegration"
           }
         ]
       }

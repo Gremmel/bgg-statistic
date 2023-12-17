@@ -19,7 +19,7 @@
           :class="{'active text-light bg-secondary': status.tabView === 'collection'}"
           href="#"
           @click="tabViewClick('collection')"
-        >Sammlung</a>
+        >Spiele</a>
       </li>
       <li class="nav-item">
         <a
@@ -127,8 +127,7 @@
                 </div>
               </div>
               <!-- Aufklappbare zusatzinfo -->
-              <div :id="'collapse' + collectionItem.collid">
-              </div>
+              <div :id="'collapse' + collectionItem.collid" />
             </div>
           </div>
         </li>
@@ -138,7 +137,7 @@
     <div class="container bg-dark" v-show="status.tabView === 'plays'">
       <ol class="list-group">
         <li
-          v-for="play in statistic.plays"
+          v-for="play in plays"
           :key="play.id"
           class="list-group-item list-group-item-plays text-light"
           :class="{'bg-secondary': play.nowinstats === '1', 'bg-dark': play.nowinstats === '0'}"
@@ -370,6 +369,18 @@ export default {
     }
   },
   computed: {
+    plays () {
+      if (!this.statistic.plays) {
+        return [];
+      }
+
+      const playsCopy = [ ...this.statistic.plays ];
+
+      // eslint-disable-next-line id-length
+      playsCopy.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      return playsCopy;
+    },
     collection () {
       const res = [];
 
@@ -379,6 +390,9 @@ export default {
             res.push(item);
           }
         }
+
+        // eslint-disable-next-line id-length
+        res.sort((a, b) => new Date(b.status.lastmodified) - new Date(a.status.lastmodified));
 
         return res;
       }

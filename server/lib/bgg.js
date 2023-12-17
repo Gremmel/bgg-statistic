@@ -165,6 +165,39 @@ const bgg = {
     });
   },
 
+  async checkCollectionPlays (playData) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        if (!this.collectionData) {
+          await this.loadCollectionData();
+        }
+
+        let found = 0;
+
+        for (const play of playData) {
+          logger.warn('check', play.item.name);
+          for (const collectionItem of this.collectionData.item) {
+            if (play.id === collectionItem.objectid) {
+              logger.info('found');
+              found += 1;
+            }
+          }
+        }
+
+        if (found === playData.length) {
+          resolve();
+        } else {
+          // neue collection anfordern
+          await this.getCollectionData();
+
+          resolve();
+        }
+      } catch (error) {
+        reject(error);
+      }
+    });
+  },
+
   async getPlayData (all, statusFuc) {
     return new Promise(async (resolve, reject) => {
       try {
@@ -175,7 +208,7 @@ const bgg = {
         let mindate = '';
 
         if (!all) {
-          mindate = format(subDays(new Date(), 2), 'yyyy-MM-dd');
+          mindate = format(subDays(new Date(), 5), 'yyyy-MM-dd');
         }
 
         logger.info('mindate', mindate);
@@ -201,6 +234,9 @@ const bgg = {
 
           page += 1;
         }
+
+        // überprüfen ob die neuen partieren spiele in der collection vorhand ist wenn nicht gleich abfragen
+        await this.checkCollectionPlays(this.playData);
 
         await this.writePlayDataToFile();
 
