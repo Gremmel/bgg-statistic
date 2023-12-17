@@ -304,7 +304,7 @@
 
     <div class="bg-dark text-light" v-show="status.tabView === 'bgg'">
       <div class="container text-center">
-        <button :disabled="disableBtnDownload" @click="clickDownloadPlays(false)" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden (ab Gestern)</button><br>
+        <button :disabled="disableBtnDownload" @click="clickDownloadPlays(false)" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden (5 Tage)</button><br>
         <button :disabled="disableBtnDownload" @click="clickDownloadPlays(true)" type="button" class="btn btn-secondary mt-5">Partien neu von BGG Laden (alle)</button><br>
         <button :disabled="disableBtnDownload" @click="clickDownloadCatalog()" type="button" class="btn btn-secondary mt-2">Sammlung neu von BGG Laden</button>
       </div>
