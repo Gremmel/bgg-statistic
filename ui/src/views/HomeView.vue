@@ -81,7 +81,7 @@
       <ol class="list-group">
         <li
           v-for="collectionItem in collection"
-          :key="collectionItem.collid"
+          :key="collectionItem.id"
           class="list-group-item list-group-item-plays text-light bg-dark"
         >
           <div class="row" data-bs-toggle="collapse" :data-bs-target="'#collapse' + collectionItem.collid" aria-expanded="false" :aria-controls="'collapse' + collectionItem.collid">
@@ -108,6 +108,20 @@
                   <div class="row">
                     <div class="col p-0">
                       <span style="font-weight: bold;">{{ collectionItem.name.text }}</span>
+                      <span
+                        v-if="collectionItem?.statistics?.ratings?.ranks?.rank?.value || false"
+                        class="ms-2 badge rounded-pill text-bg-primary"
+                        :class="{ 'text-bg-warning': collectionItem?.statistics?.ratings?.ranks?.rank?.value < 100 }"
+                      >
+                        {{ collectionItem.statistics.ratings.ranks.rank.value }}
+                      </span>
+                      <span
+                        v-if="collectionItem?.statistics?.ratings?.ranks?.rank[0]?.value || false"
+                        class="ms-2 badge rounded-pill text-bg-primary"
+                        :class="{ 'text-bg-warning': collectionItem?.statistics?.ratings?.ranks?.rank[0]?.value < 100 }"
+                      >
+                        {{ collectionItem.statistics.ratings.ranks.rank[0].value }}
+                      </span>
                     </div>
                   </div>
                   <div class="row">
@@ -383,7 +397,8 @@ export default {
           'item.name'
         ]
       },
-      fuse: null,
+      fuseCollection: null,
+      fusePlays: null,
       searchText: ''
     };
   },
@@ -408,6 +423,9 @@ export default {
     setStatistic (statistic) {
       console.log('statistic', statistic);
       this.statistic = statistic;
+
+      this.fusePlays = new Fuse(this.statistic.plays, this.fuseOptionsPlays);
+      this.fuseCollection = new Fuse(this.statistic.collection.item, this.fuseOptions);
     },
     downloadFinished () {
       this.disableBtnDownload = false;
@@ -430,8 +448,7 @@ export default {
 
       if (this.searchText !== '' && this.status.tabView === 'plays') {
         // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-        const fuse = new Fuse(this.statistic.plays, this.fuseOptionsPlays);
-        const searchList = fuse.search(this.searchText);
+        const searchList = this.fusePlays.search(this.searchText);
 
         console.log('searchList plays :>> ', searchList);
 
@@ -455,8 +472,7 @@ export default {
       if (this.statistic.collection && this.statistic.collection.item && this.status.tabView === 'collection') {
         if (this.searchText !== '') {
           // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-          const fuse = new Fuse(this.statistic.collection.item, this.fuseOptions);
-          const searchList = fuse.search(this.searchText);
+          const searchList = this.fuseCollection.search(this.searchText);
 
           console.log('searchList collection :>> ', searchList);
 
