@@ -381,7 +381,8 @@ export default {
         // ignoreFieldNorm: false,
         // fieldNormWeight: 1,
         keys: [
-          'name.text'
+          'name.text',
+          'yearpublished'
         ]
       },
       fuseOptionsPlays: {
