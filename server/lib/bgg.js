@@ -357,6 +357,7 @@ const bgg = {
       // statistic und poll der collection hinzufügen
       if (gameData && gameData.item && gameData.item.statistics) {
         collectionItem.statistics = gameData.item.statistics;
+        collectionItem.refreshDate = new Date();
 
         if (gameData.item.poll) {
           collectionItem.poll = gameData.item.poll;

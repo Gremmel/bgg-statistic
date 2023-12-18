@@ -107,7 +107,9 @@
                 <div class="col">
                   <div class="row">
                     <div class="col p-0">
-                      <span style="font-weight: bold;">{{ collectionItem.name.text }}</span>
+                      <a style="text-decoration: none; color: white;" :href="`https://boardgamegeek.com/boardgame/${collectionItem.objectid}`" target="_blank">
+                        <span style="font-weight: bold;">{{ collectionItem.name.text }}</span>
+                      </a>
                       <span
                         v-if="collectionItem?.statistics?.ratings?.ranks?.rank?.value || false"
                         class="ms-2 badge rounded-pill text-bg-primary"
@@ -138,6 +140,11 @@
                         </div>
                         <div class="row">
                           Komplexität: {{ Math.round(collectionItem.statistics.ratings.averageweight.value * 10) / 10 }} ({{ collectionItem.statistics.ratings.numweights.value }})
+                        </div>
+                        <div v-if="collectionItem.refreshDateDisplay" class="row">
+                          <div style="font-size: 0.9rem; color: lightgray;">
+                            aktuallisiert: {{ collectionItem.refreshDateDisplay }}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -450,8 +457,6 @@ export default {
         // eslint-disable-next-line vue/no-side-effects-in-computed-properties
         const searchList = this.fusePlays.search(this.searchText);
 
-        console.log('searchList plays :>> ', searchList);
-
         for (const obj of searchList) {
           playsCopy.push(obj.item);
         }
@@ -474,8 +479,6 @@ export default {
           // eslint-disable-next-line vue/no-side-effects-in-computed-properties
           const searchList = this.fuseCollection.search(this.searchText);
 
-          console.log('searchList collection :>> ', searchList);
-
           for (const obj of searchList) {
             if (obj.item.numplays > 0) {
               res.push(obj.item);
@@ -489,6 +492,28 @@ export default {
           }
           // eslint-disable-next-line id-length
           res.sort((a, b) => new Date(b.status.lastmodified) - new Date(a.status.lastmodified));
+        }
+
+        for (const item of res) {
+          if (item.refreshDate) {
+            // Das gespeicherte refreshDate in ein Date-Objekt umwandeln
+            const refreshDate = new Date(item.refreshDate);
+
+            // Die Differenz in Millisekunden berechnen
+            const aktuellesDatum = new Date();
+            const differenzInMillisekunden = aktuellesDatum - refreshDate;
+
+            // Die Differenz in Tage umrechnen
+            const differenzInTage = Math.round(differenzInMillisekunden / (1000 * 60 * 60 * 24));
+
+            if (differenzInTage === 0) {
+              item.refreshDateDisplay = 'heute';
+            } else if (differenzInTage === 1) {
+              item.refreshDateDisplay = 'gestern';
+            } else {
+              item.refreshDateDisplay = `vor ${differenzInTage} Tagen`;
+            }
+          }
         }
 
         return res;

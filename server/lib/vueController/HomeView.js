@@ -103,6 +103,7 @@ const HomeView = {
     // logger.info('status', status);
     ioClient.emit('initHome', status);
     this.status = status;
+    this.collection = await this.loadCollection();
     this.statistic = await this.calcStatistic();
     ioClient.emit('setStatistic', this.statistic);
   },
