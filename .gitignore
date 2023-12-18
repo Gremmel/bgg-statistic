@@ -1,3 +1,11 @@
 basic-app*
 server.log
 server/gameInfo.json
+extern/calc.json
+extern/collection.json
+extern/plays.json
+extern/refreshInfo.json
+extern/status.json
+extern/log/server.log.1
+extern/log/server.log.2
+extern/log/server.log.3

@@ -74,6 +74,10 @@
     </div>
 
     <div class="container bg-dark" v-show="status.tabView === 'collection'">
+      <div class="input-group mb-3">
+        <input v-model="searchText" type="text" class="form-control" placeholder="finde...">
+        <button @click="clickClearTextSearch" class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+      </div>
       <ol class="list-group">
         <li
           v-for="collectionItem in collection"
@@ -135,6 +139,10 @@
     </div>
 
     <div class="container bg-dark" v-show="status.tabView === 'plays'">
+      <div class="input-group mb-3">
+        <input v-model="searchText" type="text" class="form-control" placeholder="finde...">
+        <button @click="clickClearTextSearch" class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+      </div>
       <ol class="list-group">
         <li
           v-for="play in plays"
@@ -317,6 +325,8 @@
 
 <script>
 
+import Fuse from 'fuse.js';
+
 export default {
   name: 'HomeView',
   components: {
@@ -332,7 +342,49 @@ export default {
       downloadPlaysCount: {
         value: 0,
         total: 10
-      }
+      },
+      fuseOptions: {
+        // isCaseSensitive: false,
+        // includeScore: false,
+        // shouldSort: true,
+        // includeMatches: false,
+        // findAllMatches: false,
+        // minMatchCharLength: 2,
+
+        // location: 0,
+        threshold: 0.5,
+
+        // distance: 100,
+        // useExtendedSearch: false,
+        // ignoreLocation: false,
+        // ignoreFieldNorm: false,
+        // fieldNormWeight: 1,
+        keys: [
+          'name.text'
+        ]
+      },
+      fuseOptionsPlays: {
+        // isCaseSensitive: false,
+        // includeScore: false,
+        // shouldSort: true,
+        // includeMatches: false,
+        // findAllMatches: false,
+        // minMatchCharLength: 2,
+
+        // location: 0,
+        threshold: 0.5,
+
+        // distance: 100,
+        // useExtendedSearch: false,
+        // ignoreLocation: false,
+        // ignoreFieldNorm: false,
+        // fieldNormWeight: 1,
+        keys: [
+          'item.name'
+        ]
+      },
+      fuse: null,
+      searchText: ''
     };
   },
   sockets: {
@@ -374,30 +426,59 @@ export default {
         return [];
       }
 
-      const playsCopy = [ ...this.statistic.plays ];
+      let playsCopy = [];
+
+      if (this.searchText !== '' && this.status.tabView === 'plays') {
+        // eslint-disable-next-line vue/no-side-effects-in-computed-properties
+        const fuse = new Fuse(this.statistic.plays, this.fuseOptionsPlays);
+        const searchList = fuse.search(this.searchText);
+
+        console.log('searchList plays :>> ', searchList);
+
+        for (const obj of searchList) {
+          playsCopy.push(obj.item);
+        }
+      } else {
+        playsCopy = [ ...this.statistic.plays ];
+
+        // eslint-disable-next-line id-length
+        playsCopy.sort((a, b) => new Date(b.date) - new Date(a.date));
+      }
 
       // eslint-disable-next-line id-length
-      playsCopy.sort((a, b) => new Date(b.date) - new Date(a.date));
 
       return playsCopy;
     },
     collection () {
       const res = [];
 
-      if (this.statistic.collection && this.statistic.collection.item) {
-        for (const item of this.statistic.collection.item) {
-          if (item.numplays > 0) {
-            res.push(item);
-          }
-        }
+      if (this.statistic.collection && this.statistic.collection.item && this.status.tabView === 'collection') {
+        if (this.searchText !== '') {
+          // eslint-disable-next-line vue/no-side-effects-in-computed-properties
+          const fuse = new Fuse(this.statistic.collection.item, this.fuseOptions);
+          const searchList = fuse.search(this.searchText);
 
-        // eslint-disable-next-line id-length
-        res.sort((a, b) => new Date(b.status.lastmodified) - new Date(a.status.lastmodified));
+          console.log('searchList collection :>> ', searchList);
+
+          for (const obj of searchList) {
+            if (obj.item.numplays > 0) {
+              res.push(obj.item);
+            }
+          }
+        } else {
+          for (const obj of this.statistic.collection.item) {
+            if (obj.numplays > 0) {
+              res.push(obj);
+            }
+          }
+          // eslint-disable-next-line id-length
+          res.sort((a, b) => new Date(b.status.lastmodified) - new Date(a.status.lastmodified));
+        }
 
         return res;
       }
 
-      return [];
+      return res;
     },
     downloadProgressStyle () {
       let str = '';
@@ -437,6 +518,9 @@ export default {
       return arr;
     }
   },
+  created () {
+    //
+  },
   mounted () {
     console.log('HomeView Mounted', this.$socket.connected);
     if (this.$socket.connected) {
@@ -444,6 +528,9 @@ export default {
     }
   },
   methods: {
+    clickClearTextSearch () {
+      this.searchText = '';
+    },
     clickDownloadPlays (all) {
       this.disableBtnDownload = true;
       this.toServer('downloadPlays', all);

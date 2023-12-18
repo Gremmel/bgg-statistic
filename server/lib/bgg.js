@@ -365,7 +365,7 @@ const bgg = {
         await this.writeCollectionDataToFile(true);
 
         refreshInfo.collectionIndex += 1;
-        refreshInfo.lastCollectionItem = gameData;
+        refreshInfo.lastCollectionItem = collectionItem.name.text;
 
         try {
           await fs.writeJSON(path.join(__extdir, 'refreshInfo.json'), refreshInfo, { spaces: 2 });
