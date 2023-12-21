@@ -135,22 +135,12 @@ const HomeView = {
 
   async addStatisticsToCollection (objectid) {
     logger.info('addStatisticsToCollection objectid', objectid);
-    const gameInfo = await this.bgg.getGameData(objectid);
 
-    // statistic der collection hinzufügen
-    if (gameInfo) {
-      for (const item of this.collection.item) {
-        if (item.objectid === objectid) {
-          item.statistics = gameInfo.item.statistics;
-        }
-      }
-    }
+    const statistics = await this.bgg.refreshCollectionData(objectid);
 
-    await fs.writeJSON(path.join(__extdir, 'collection.json'), this.collection, { spaces: 2 });
+    await this.loadCollection();
 
-    // process.exit(0);
-
-    return gameInfo.item.statistics;
+    return statistics;
   },
 
   async getCollectionData (play) {

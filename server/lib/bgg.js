@@ -108,7 +108,7 @@ const bgg = {
           const coll = await fs.readJSON(path.join(__extdir, 'collection.json'));
 
           for (const item of this.collectionData.item) {
-            // entsprechendes item in vorhandenem entnehmen und statistic übernehmen
+            // entsprechendes item in vorhandenem entnehmen und statistic etc. übernehmen
             for (const itemOld of coll.item) {
               if (item.objectid === itemOld.objectid) {
                 if (itemOld.statistics) {
@@ -116,6 +116,9 @@ const bgg = {
                 }
                 if (itemOld.poll) {
                   item.poll = itemOld.poll;
+                }
+                if (itemOld.refreshDate) {
+                  item.refreshDate = itemOld.refreshDate;
                 }
               }
             }
@@ -177,7 +180,7 @@ const bgg = {
         for (const play of playData) {
           logger.warn('check', play.item.name);
           for (const collectionItem of this.collectionData.item) {
-            if (play.id === collectionItem.objectid) {
+            if (play.item.objectid === collectionItem.objectid) {
               logger.info('found');
               found += 1;
             }
@@ -279,11 +282,48 @@ const bgg = {
     });
   },
 
-  async refreshCollectionData () {
+  addGameDataToCollectionItem (collectionItem, gameData) {
+    // eslint-disable-next-line no-param-reassign
+    collectionItem.statistics = gameData.item.statistics;
+    // eslint-disable-next-line no-param-reassign
+    collectionItem.refreshDate = new Date();
+
+    if (gameData.item.poll) {
+      // eslint-disable-next-line no-param-reassign
+      collectionItem.poll = gameData.item.poll;
+    }
+  },
+
+  async refreshCollectionData (objectid) {
     logger.fatal('refresh');
 
     if (!this.collectionData) {
       await this.loadCollectionData();
+    }
+
+    if (objectid) {
+      const gameData = await this.getGameData(objectid);
+
+      // statistic der collection hinzufügen
+      if (gameData) {
+        let statistic;
+
+        for (const item of this.collectionData.item) {
+          if (item.objectid === objectid) {
+            this.addGameDataToCollectionItem(item, gameData);
+
+            statistic = item.statistics;
+
+            await this.writeCollectionDataToFile(true);
+
+            logger.info('added');
+
+            break;
+          }
+        }
+
+        return statistic;
+      }
     }
 
     // überprüfen ob es noch spiele in der sammlung ohne statistic gibt
@@ -296,7 +336,7 @@ const bgg = {
 
         // statistic der collection hinzufügen
         if (gameData && gameData.item && gameData.item.statistics) {
-          item.statistics = gameData.item.statistics;
+          this.addGameDataToCollectionItem(item, gameData);
 
           await this.writeCollectionDataToFile(true);
 
@@ -317,7 +357,7 @@ const bgg = {
 
         // statistic der collection hinzufügen
         if (gameData && gameData.item && gameData.item.poll) {
-          item.poll = gameData.item.poll;
+          this.addGameDataToCollectionItem(item, gameData);
 
           await this.writeCollectionDataToFile(true);
 
@@ -328,7 +368,7 @@ const bgg = {
       }
     }
 
-    // ifos der letzen aktuallisierung holden
+    // infos der letzen aktuallisierung holden
     let refreshInfo = {
       collectionIndex: 0,
       lastCollectionItem: {}
@@ -356,12 +396,7 @@ const bgg = {
 
       // statistic und poll der collection hinzufügen
       if (gameData && gameData.item && gameData.item.statistics) {
-        collectionItem.statistics = gameData.item.statistics;
-        collectionItem.refreshDate = new Date();
-
-        if (gameData.item.poll) {
-          collectionItem.poll = gameData.item.poll;
-        }
+        this.addGameDataToCollectionItem(collectionItem, gameData);
 
         await this.writeCollectionDataToFile(true);
 
