@@ -71,6 +71,7 @@ const bgg = {
       try {
         // liste laden und alles aktuallisieren was neu ist
         const playsOld = await fs.readJSON(path.join(__extdir, 'plays.json'));
+        const playerList = {};
 
         for (const play of this.playData) {
           let found = false;
@@ -91,6 +92,19 @@ const bgg = {
           }
         }
 
+        // alle spieler ermitteln und überprüfen ob neue hinzugekommen sind
+        for (const play of playsOld) {
+          if (Array.isArray(play.players.player)) {
+            for (const player of play.players.player) {
+              playerList[player.name] = {
+                id: player.userid
+              };
+            }
+          }
+        }
+
+        await this.checkNewPlayer(playerList);
+
         // eslint-disable-next-line no-undef
         await fs.writeJSON(path.join(__extdir, 'plays.json'), playsOld, { spaces: 2 });
 
@@ -99,6 +113,36 @@ const bgg = {
         reject(error);
       }
     });
+  },
+
+  async checkNewPlayer (playerList) {
+    try {
+      const status = await fs.readJSON(path.join(__extdir, 'status.json'));
+      let newPlayer = false;
+
+      for (const name in playerList) {
+        if (Object.hasOwnProperty.call(playerList, name)) {
+          const player = playerList[name];
+
+          if (!status.players[name.toLowerCase()]) {
+            logger.warn('neuer Player', name);
+            status.players[name.toLowerCase()] = {
+              name,
+              id: player.id,
+              checked: false
+            };
+            newPlayer = true;
+          }
+        }
+      }
+
+      if (newPlayer) {
+        logger.info('schreibe neue Status liste da Player hinzugekommen sind');
+        await fs.writeJson(path.join(__extdir, 'status.json'), status, { spaces: 2 });
+      }
+    } catch (error) {
+      logger.error('Fehler in checkNewPlayer', error);
+    }
   },
 
   async writeCollectionDataToFile (saveDirect = false) {

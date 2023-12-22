@@ -273,9 +273,14 @@ const HomeView = {
     });
   },
 
-  berPoints (length, weight, score, maxScore) {
-    const factorLength = 0.42;
-    const factorWeight = 0.42;
+  berPoints (length, weight, score, maxScore, noScore) {
+    let factorLength = 0.42;
+    let factorWeight = 0.42;
+
+    if (noScore) {
+      factorLength /= 2;
+      factorWeight /= 2;
+    }
 
     const pLength = length / 60.0 * factorLength;
     const pWeight = weight * factorWeight;
@@ -340,14 +345,15 @@ const HomeView = {
 
       // wenn Spieler gewonnen hat
       if (playerData.win === '1') {
-        points = this.berPoints(play.length, weight, 100, 100);
+        points = this.berPoints(play.length, weight, 100, 100, true);
       } else {
         // ansonsten halbe punkte
-        points = this.berPoints(play.length, weight, 50, 100);
+        points = this.berPoints(play.length, weight, 50, 100, true);
       }
     } else {
       // platzierung ermitteln
       if (this.checkMaxPointsWin(gPlayers)) {
+        // größte punktzahl gewinnt
         let offset = 0;
 
         if (minScore <= 0) {
@@ -372,12 +378,13 @@ const HomeView = {
           points = this.berPoints(play.length, weight, pScore + offset, maxScore + offset);
         }
       } else {
+        // kleinere Punktzahl gewinnt
         // wenn Spieler gewonnen hat
         if (playerData.win === '1') {
-          points = this.berPoints(play.length, weight, 100, 100);
+          points = this.berPoints(play.length, weight, 100, 100, true);
         } else {
           // ansonsten halbe punkte
-          points = this.berPoints(play.length, weight, 50, 100);
+          points = this.berPoints(play.length, weight, 50, 100, true);
         }
       }
     }
@@ -418,7 +425,9 @@ const HomeView = {
       ioClient.emit('statusGetPlayData', { value, total });
     });
     this.plays = undefined;
+    this.status = await this.loadStatus();
     this.collection = await this.loadCollection();
+    ioClient.emit('initHome', this.status);
     ioClient.emit('downloadFinished');
   },
 

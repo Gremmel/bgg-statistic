@@ -148,10 +148,10 @@
                     <div class="card bg-dark border-success">
                       <div class="card-body pt-1 pb-1">
                         <div class="row">
-                          Bewertung: {{ Math.round(collectionItem.statistics.ratings.average.value * 10) / 10 }} ({{ collectionItem.statistics.ratings.usersrated.value }})
+                          Bewertung: {{ Math.round(collectionItem.statistics.ratings.average.value * 100) / 100 }} ({{ collectionItem.statistics.ratings.usersrated.value }})
                         </div>
                         <div class="row">
-                          Komplexität: {{ Math.round(collectionItem.statistics.ratings.averageweight.value * 10) / 10 }} ({{ collectionItem.statistics.ratings.numweights.value }})
+                          Komplexität: {{ Math.round(collectionItem.statistics.ratings.averageweight.value * 100) / 100 }} ({{ collectionItem.statistics.ratings.numweights.value }})
                         </div>
                         <div v-if="collectionItem.refreshDateDisplay" class="row">
                           <div style="font-size: 0.9rem; color: lightgray;">
@@ -550,7 +550,7 @@ export default {
         if (Object.hasOwnProperty.call(this.statistic.players, key)) {
           const player = this.statistic.players[key];
 
-          player.points = Math.round(player.points * 10) / 10;
+          player.points = Math.round(player.points * 100) / 100;
 
           unsorted.push(player);
         }
