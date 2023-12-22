@@ -124,6 +124,18 @@
                       >
                         {{ collectionItem.statistics.ratings.ranks.rank[0].value }}
                       </span>
+                      <span
+                        v-if="collectionItem.rankDiv !== 'undefined' || false"
+                        class="ms-2 badge rounded-pill"
+                        :class="{
+                          'bg-secondary': collectionItem.rankChange === '=',
+                          'bg-success': collectionItem.rankChange === '<',
+                          'bg-danger': collectionItem.rankChange === '>'
+                        }"
+                      >
+                        <span v-if="collectionItem.rankDiv > 0">+</span><span v-if="collectionItem.rankDiv !== 0">{{ collectionItem.rankDiv }}</span>
+                        <span v-if="collectionItem.rankDiv === 0">=</span>
+                      </span>
                     </div>
                   </div>
                   <div class="row">

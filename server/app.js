@@ -17,7 +17,7 @@ const bgg = require('./lib/bgg');
     // await bgg.getCollectionData();
     // process.exit(0);
 
-    bgg.init();
+    await bgg.init();
 
     logger.debug('init express');
 
@@ -32,9 +32,7 @@ const bgg = require('./lib/bgg');
     express.start();
 
     // regelmäsig collection data aktuallisieren
-    setInterval(() => {
-      bgg.refreshCollectionData();
-    }, 30 * 60 * 1000);
+    bgg.startRefreshZyclus();
   } catch (error) {
     logger.error(error);
     process.exit(1);

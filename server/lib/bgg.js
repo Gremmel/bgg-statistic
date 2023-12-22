@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-undef */
 'use strict';
 
@@ -283,6 +284,29 @@ const bgg = {
   },
 
   addGameDataToCollectionItem (collectionItem, gameData) {
+    let oldRanking;
+    let newRanking;
+
+    // auswerten ob sich ranking geändert hat seit dem letzten mal
+    if (Array.isArray(collectionItem.statistics.ratings.ranks.rank)) {
+      oldRanking = Number(collectionItem.statistics.ratings.ranks.rank[0].value);
+      newRanking = Number(gameData.item.statistics.ratings.ranks.rank[0].value);
+    } else {
+      oldRanking = Number(collectionItem.statistics.ratings.ranks.rank.value);
+      newRanking = Number(gameData.item.statistics.ratings.ranks.rank.value);
+    }
+
+    let rankChange = '=';
+
+    if (newRanking > oldRanking) {
+      rankChange = '>';
+    } else if (newRanking < oldRanking) {
+      rankChange = '<';
+    }
+
+    // änderung eintragen
+    collectionItem.rankChange = rankChange;
+    collectionItem.rankDiv = oldRanking - newRanking;
     // eslint-disable-next-line no-param-reassign
     collectionItem.statistics = gameData.item.statistics;
     // eslint-disable-next-line no-param-reassign
@@ -412,6 +436,34 @@ const bgg = {
         logger.info('added');
       }
     }
+  },
+
+  calcRefreshTime () {
+    const count = this.collectionData.item.length;
+    const secWoche = 7 * 24 * 60 * 60;
+
+    const ms = Math.round(secWoche / count * 1000);
+
+    logger.info('ms', ms);
+    logger.info('count', count);
+
+    logger.info(`next zyclus in ${Math.round(ms / 1000 / 60 * 100) / 100} min`);
+
+    return ms;
+  },
+
+  startRefreshZyclus (refreshTime = null) {
+    if (!refreshTime) {
+      refreshTime = this.calcRefreshTime();
+    }
+
+    logger.warn('starte Timeout refreshTime ', refreshTime);
+    setTimeout(() => {
+      this.refreshCollectionData();
+      const rtime = this.calcRefreshTime();
+
+      this.startRefreshZyclus(rtime);
+    }, refreshTime);
   }
 
 };
