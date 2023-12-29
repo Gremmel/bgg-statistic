@@ -332,12 +332,21 @@ const bgg = {
     let newRanking;
 
     // auswerten ob sich ranking geändert hat seit dem letzten mal
-    if (Array.isArray(collectionItem.statistics.ratings.ranks.rank)) {
-      oldRanking = Number(collectionItem.statistics.ratings.ranks.rank[0].value);
+    if (Array.isArray(gameData.item.statistics.ratings.ranks.rank)) {
       newRanking = Number(gameData.item.statistics.ratings.ranks.rank[0].value);
+      if (collectionItem.statistics) {
+        oldRanking = Number(collectionItem.statistics.ratings.ranks.rank[0].value);
+      } else {
+        oldRanking = newRanking;
+      }
     } else {
       oldRanking = Number(collectionItem.statistics.ratings.ranks.rank.value);
       newRanking = Number(gameData.item.statistics.ratings.ranks.rank.value);
+      if (collectionItem.statistics) {
+        oldRanking = Number(collectionItem.statistics.ratings.ranks.rank.value);
+      } else {
+        oldRanking = newRanking;
+      }
     }
 
     let rankChange = '=';
@@ -363,7 +372,7 @@ const bgg = {
   },
 
   async refreshCollectionData (objectid) {
-    logger.fatal('refresh');
+    logger.fatal('refresh objectid', objectid);
 
     if (!this.collectionData) {
       await this.loadCollectionData();

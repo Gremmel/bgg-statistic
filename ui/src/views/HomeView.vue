@@ -498,13 +498,21 @@ export default {
             }
           }
         } else {
-          for (const obj of this.statistic.collection.item) {
-            if (obj.numplays > 0) {
-              res.push(obj);
+          // sortieren nach playreihenfolge
+          const zugeordnet = {};
+
+          for (const play of this.plays) {
+            console.log('play play', play);
+
+            for (const obj of this.statistic.collection.item) {
+              if (play.item.objectid === obj.objectid) {
+                if (!zugeordnet[obj.objectid]) {
+                  res.push(obj);
+                  zugeordnet[obj.objectid] = true;
+                }
+              }
             }
           }
-          // eslint-disable-next-line id-length
-          res.sort((a, b) => new Date(b.status.lastmodified) - new Date(a.status.lastmodified));
         }
 
         for (const item of res) {
