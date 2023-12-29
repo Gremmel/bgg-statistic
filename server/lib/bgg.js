@@ -165,6 +165,15 @@ const bgg = {
                 if (itemOld.refreshDate) {
                   item.refreshDate = itemOld.refreshDate;
                 }
+                if (itemOld.rankChange) {
+                  item.rankChange = itemOld.rankChange;
+                  if (item.rankChange === '=') {
+                    item.rankDiv = 0;
+                  }
+                }
+                if (itemOld.rankDiv) {
+                  item.rankDiv = itemOld.rankDiv;
+                }
               }
             }
           }
@@ -371,6 +380,29 @@ const bgg = {
     }
   },
 
+  findOldestCollectionItemIndex () {
+    let oldestIndex = -1;
+    const data = this.collectionData.item;
+
+    for (let i = 0; i < data.length; i++) {
+      // wenn es noch kein datum gibt
+      if (!data[i].refreshDate) {
+        logger.warn('find oldest, kein datum', data[i].name.text);
+        oldestIndex = i;
+
+        break;
+      }
+
+      if (oldestIndex === -1 || new Date(data[i].refreshDate) < new Date(data[oldestIndex].refreshDate)) {
+        oldestIndex = i;
+      }
+    }
+
+    logger.warn('find oldest: ', data[oldestIndex].refreshDate);
+
+    return oldestIndex;
+  },
+
   async refreshCollectionData (objectid) {
     logger.fatal('refresh objectid', objectid);
 
@@ -445,48 +477,46 @@ const bgg = {
       }
     }
 
-    // infos der letzen aktuallisierung holden
-    let refreshInfo = {
-      collectionIndex: 0,
-      lastCollectionItem: {}
-    };
+    // überprüfen ob es noch spiele in der sammlung refresh Datum gibt
+    for (const item of this.collectionData.item) {
+      if (!item.refreshDate) {
+        logger.info('keine refreshDate in ', item.name.text);
 
-    try {
-      refreshInfo = await fs.readJSON(path.join(__extdir, 'refreshInfo.json'));
-    } catch (error) {
-      logger.warn('keine alte refreshInfo', error);
-    }
+        // daten abrufen
+        const gameData = await this.getGameData(item.objectid);
 
-    // wenn ende erreicht wurde neu anfangen
-    if (refreshInfo.collectionIndex >= this.collectionData.item.length) {
-      logger.info('index überlauf setze auf 0');
-      refreshInfo.collectionIndex = 0;
-    }
+        // statistic der collection hinzufügen
+        if (gameData && gameData.item && gameData.item.poll) {
+          this.addGameDataToCollectionItem(item, gameData);
 
-    const collectionItem = this.collectionData.item[refreshInfo.collectionIndex];
+          await this.writeCollectionDataToFile(true);
 
-    if (collectionItem && collectionItem.objectid) {
-      logger.info('rufe aktuelle daten ab ', collectionItem.name.text);
-
-      // daten abrufen
-      const gameData = await this.getGameData(collectionItem.objectid);
-
-      // statistic und poll der collection hinzufügen
-      if (gameData && gameData.item && gameData.item.statistics) {
-        this.addGameDataToCollectionItem(collectionItem, gameData);
-
-        await this.writeCollectionDataToFile(true);
-
-        refreshInfo.collectionIndex += 1;
-        refreshInfo.lastCollectionItem = collectionItem.name.text;
-
-        try {
-          await fs.writeJSON(path.join(__extdir, 'refreshInfo.json'), refreshInfo, { spaces: 2 });
-        } catch (error) {
-          logger.error('Fehler beim schreiben der refreshinfo', error);
+          logger.info('added');
         }
 
-        logger.info('added');
+        break;
+      }
+    }
+
+    // den ältesten Eintrag aktuallisieren
+    if (!objectid) {
+      const oldestCollectionItemIndex = this.findOldestCollectionItemIndex();
+      const collectionItem = this.collectionData.item[oldestCollectionItemIndex];
+
+      if (collectionItem && collectionItem.objectid) {
+        logger.info('rufe aktuelle daten ab ', collectionItem.name.text);
+
+        // daten abrufen
+        const gameData = await this.getGameData(collectionItem.objectid);
+
+        // statistic und poll der collection hinzufügen
+        if (gameData && gameData.item && gameData.item.statistics) {
+          this.addGameDataToCollectionItem(collectionItem, gameData);
+
+          await this.writeCollectionDataToFile(true);
+
+          logger.info('added');
+        }
       }
     }
   },
@@ -518,7 +548,6 @@ const bgg = {
       this.startRefreshZyclus(rtime);
     }, refreshTime);
   }
-
 };
 
 module.exports = bgg;
