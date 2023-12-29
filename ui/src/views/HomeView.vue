@@ -502,8 +502,6 @@ export default {
           const zugeordnet = {};
 
           for (const play of this.plays) {
-            console.log('play play', play);
-
             for (const obj of this.statistic.collection.item) {
               if (play.item.objectid === obj.objectid) {
                 if (!zugeordnet[obj.objectid]) {
@@ -565,9 +563,6 @@ export default {
       }
 
       const sorted = unsorted.slice(0);
-
-      console.log('sorted', sorted);
-      console.log('unsorted', unsorted);
 
       // eslint-disable-next-line id-length
       sorted.sort((a, b) => b.points - a.points);
