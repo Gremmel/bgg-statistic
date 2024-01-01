@@ -78,6 +78,21 @@
         <input v-model="searchText" type="text" class="form-control" placeholder="finde...">
         <button @click="clickClearTextSearch" class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
       </div>
+      <div class="form-check form-switch ms-1 text-light text-start">
+        <input
+          id="sortByRefreshTime"
+          v-model="sortByRefreshTime"
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+        >
+        <label
+          class="form-check-label"
+          for="sortByRefreshTime"
+        >
+          sort Aktualisierungs Datum
+        </label>
+      </div>
       <ol class="list-group">
         <li
           v-for="collectionItem in collection"
@@ -376,6 +391,7 @@ export default {
         value: 0,
         total: 10
       },
+      sortByRefreshTime: false,
       fuseOptions: {
         // isCaseSensitive: false,
         // includeScore: false,
@@ -497,6 +513,14 @@ export default {
               res.push(obj.item);
             }
           }
+        } else if (this.sortByRefreshTime) {
+          // sortieren nach aktualisierung
+          for (const obj of this.statistic.collection.item) {
+            res.push(obj);
+          }
+
+          // eslint-disable-next-line id-length
+          res.sort((a, b) => new Date(b.refreshDate) - new Date(a.refreshDate));
         } else {
           // sortieren nach playreihenfolge
           const zugeordnet = {};

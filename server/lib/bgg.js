@@ -15,6 +15,7 @@ const bgg = {
   playData: [],
   collectionData: {},
   calcData: {},
+  local: false,
 
   async wait (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
@@ -29,6 +30,8 @@ const bgg = {
         await this.loadCollectionData();
 
         await this.calcPlayList();
+
+        this.local = await fs.pathExists(path.join(__dirname, '..', 'local'));
 
         resolve();
       } catch (error) {
@@ -525,12 +528,17 @@ const bgg = {
     const count = this.collectionData.item.length;
     const secWoche = 7 * 24 * 60 * 60;
 
-    const ms = Math.round(secWoche / count * 1000);
+    let ms = Math.round(secWoche / count * 1000);
 
     logger.info('ms', ms);
     logger.info('count', count);
 
     logger.info(`next zyclus in ${Math.round(ms / 1000 / 60 * 100) / 100} min`);
+
+    if (this.local) {
+      logger.warn('dev umgebung -> refresh time wird auf 10s gesetzt');
+      ms = 10 * 1000;
+    }
 
     return ms;
   },
