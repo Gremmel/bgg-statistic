@@ -405,6 +405,27 @@ const bgg = {
 
     logger.warn('find oldest: ', data[oldestIndex].refreshDate);
 
+    // Aktuelles Datum
+    const currentDate = new Date();
+
+    // Umwandlung des Datums-Strings in ein Date-Objekt
+    const givenDate = new Date(data[oldestIndex].refreshDate);
+
+    // Berechnung der Differenz in Millisekunden
+    const diff = currentDate - givenDate;
+
+    // Umrechnung der Differenz in Tage
+    const diffInDays = diff / (1000 * 60 * 60 * 24);
+
+    // Überprüfung, ob die Differenz größer als 8 Tage ist
+    if (diffInDays > 8) {
+      this.oldCollectionEntrys = true;
+      logger.warn('Das Datum ist älter als 8 Tage.', diffInDays);
+    } else {
+      this.oldCollectionEntrys = false;
+      logger.warn('Das Datum ist nicht älter als 8 Tage.', diffInDays);
+    }
+
     return oldestIndex;
   },
 
@@ -537,8 +558,15 @@ const bgg = {
 
     logger.info(`next zyclus in ${Math.round(ms / 1000 / 60 * 100) / 100} min`);
 
-    if (this.local) {
-      logger.warn('dev umgebung -> refresh time wird auf 10s gesetzt');
+    this.findOldestCollectionItemIndex();
+
+    // if (this.local) {
+    //   logger.warn('dev umgebung -> refresh time wird auf 10s gesetzt');
+    //   ms = 10 * 1000;
+    // }
+
+    if (this.oldCollectionEntrys) {
+      logger.warn('es gibt alte Einträge -> refresh time wird auf 10s gesetzt');
       ms = 10 * 1000;
     }
 
