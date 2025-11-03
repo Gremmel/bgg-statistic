@@ -6,6 +6,7 @@ extern/collection.json
 extern/plays.json
 extern/refreshInfo.json
 extern/status.json
+extern/gameData
 extern/log/server.log.1
 extern/log/server.log.2
 extern/log/server.log.3

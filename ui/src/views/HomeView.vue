@@ -1,3 +1,4 @@
+<!-- eslint-disable id-length -->
 <!-- eslint-disable vue/attributes-order -->
 <!-- eslint-disable vue/singleline-html-element-content-newline -->
 <!-- eslint-disable vue/max-attributes-per-line -->
@@ -149,7 +150,7 @@
                         }"
                       >
                         <span v-if="collectionItem.rankDiv > 0">+</span><span v-if="collectionItem.rankDiv !== 0">{{ collectionItem.rankDiv }}</span>
-                        <span v-if="collectionItem.rankDiv === 0">=</span>
+                        <span v-if="collectionItem.rankDiv == 0">=</span>
                       </span>
                     </div>
                   </div>
@@ -196,7 +197,7 @@
           v-for="play in plays"
           :key="play.id"
           class="list-group-item list-group-item-plays text-light"
-          :class="{'bg-secondary': play.nowinstats === '1', 'bg-dark': play.nowinstats === '0'}"
+          :class="{'bg-secondary': play.nowinstats == '1', 'bg-dark': play.nowinstats == '0'}"
         >
           <div class="row" data-bs-toggle="collapse" :data-bs-target="'#collapse' + play.id" aria-expanded="false" :aria-controls="'collapse' + play.id">
             <div class="col-auto text-start">
@@ -228,7 +229,7 @@
                 <div class="col">
                   <span
                     v-for="player in play.players.player"
-                    v-show="player.win === '1'"
+                    v-show="player.win == '1'"
                     :key="player.name"
                     class="badge bg-secondary rounded-pill me-1"
                   >
@@ -250,7 +251,7 @@
                           <tr
                             v-for="player in play.players.player"
                             :key="player.name"
-                            :class="{'bg-success': player.win === '1'}"
+                            :class="{'bg-success': player.win == '1'}"
                           >
                             <td class="p-1">{{ player.name }}</td>
                             <td class="p-1">
@@ -445,13 +446,10 @@ export default {
     },
     initHome (status) {
       console.log('initHome', status);
-      if (status.players) {
-        const sorted = Object.keys(status.players).sort().reduce((acc, key) => ({
-          ...acc, [key]: status.players[key]
-        }), {});
 
+      if (status.players) {
         // eslint-disable-next-line no-param-reassign
-        status.players = sorted;
+        status.players = this.sortStatusPlayers(status.players);
       }
 
       this.status = status;
@@ -609,6 +607,31 @@ export default {
     }
   },
   methods: {
+    sortStatusPlayers (players) {
+      console.log('sortStatusPlayers');
+      if (players) {
+        const sorted = Object.keys(players).
+          // eslint-disable-next-line id-length
+          sort((a, b) => {
+            const aSort = players[a].sortValue ?? 0;
+            const bSort = players[b].sortValue ?? 0;
+
+            if (aSort !== bSort) {
+              return bSort - aSort;
+            }
+            const aName = players[a].name?.toLowerCase() ?? '';
+            const bName = players[b].name?.toLowerCase() ?? '';
+
+            return aName.localeCompare(bName);
+          }).
+          reduce((acc, key) => ({
+            ...acc, [key]: players[key]
+          }), {});
+
+        // eslint-disable-next-line no-param-reassign
+        return sorted;
+      }
+    },
     clickClearTextSearch () {
       this.searchText = '';
     },
@@ -622,6 +645,7 @@ export default {
     },
     async playerClicked (playername) {
       console.log('player clicked', playername);
+      this.status.players[playername].sortValue += 1;
       this.sendStatusChanged();
     },
     sendStatusChanged () {
@@ -631,6 +655,7 @@ export default {
     },
     tabViewClick (value) {
       this.status.tabView = value;
+      this.status.players = this.sortStatusPlayers(this.status.players);
       this.sendStatusChanged();
     },
     toServer (callFunction, payload) {

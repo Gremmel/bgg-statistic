@@ -50,6 +50,24 @@ const HomeView = {
       try {
         const collection = await fs.readJSON(path.join(__extdir, 'collection.json'));
 
+        // collection von doppelten items bereinigen
+        const uniqueItems = {};
+        const cleanedItems = [];
+
+        for (const item of collection.item) {
+          if (!uniqueItems[item.objectid]) {
+            uniqueItems[item.objectid] = true;
+            cleanedItems.push(item);
+          }
+        }
+
+        // wenn länge ungterschiedlich ist wieder schreiben
+        if (collection.item.length !== cleanedItems.length) {
+          collection.item = cleanedItems;
+
+          await fs.writeJSON(path.join(__extdir, 'collection.json'), collection, { spaces: 2 });
+        }
+
         resolve(collection);
       } catch (error) {
         reject(error);
@@ -97,6 +115,17 @@ const HomeView = {
         };
       } catch (error2) {
         logger.error('fehler beim laden der calcData', error2);
+      }
+    }
+
+    // überprüfen ob player eine sortValue hat, wenn nicht hinzufügen
+    const sortIndex = 1;
+
+    for (const player in status.players) {
+      if (Object.hasOwnProperty.call(status.players, player)) {
+        if (!status.players[player].sortValue) {
+          status.players[player].sortValue = sortIndex;
+        }
       }
     }
 
@@ -249,7 +278,7 @@ const HomeView = {
                     for (const pplayer of play.players.player) {
                       if (pplayer.name.toLowerCase() === name) {
                         pplayer.points = points;
-                        if (pplayer.win === '1') {
+                        if (pplayer.win === 1) {
                           if (!player.win) {
                             player.win = 0;
                           }
@@ -344,7 +373,7 @@ const HomeView = {
       // wenn kein score
 
       // wenn Spieler gewonnen hat
-      if (playerData.win === '1') {
+      if (playerData.win === 1) {
         points = this.berPoints(play.length, weight, 100, 100, true);
       } else {
         // ansonsten halbe punkte
@@ -358,8 +387,9 @@ const HomeView = {
 
         if (minScore <= 0) {
           offset = (minScore * -1) + 1;
-          logger.error('score ist unter null', minScore, offset);
-          logger.warn('score', pScore);
+
+          // logger.error('score ist unter null', minScore, offset);
+          // logger.warn('score', pScore);
         }
 
         // Bei Arche Nova werden 60 Punkte hinzugezählt um es gerechter zu machen
@@ -371,7 +401,7 @@ const HomeView = {
         // wenn maximale punktezahl gewinnt
         // logger.warn(' pScore', pScore);
         // logger.warn('maxScore', maxScore);
-        if (playerData.win === '0' && pScore === maxScore) {
+        if (playerData.win === 0 && pScore === maxScore) {
           // logger.warn('gleiche Punktzahl aber nicht gewonnen');
           points = this.berPoints(play.length, weight, pScore - 1 + offset, maxScore + offset);
         } else {
@@ -380,7 +410,7 @@ const HomeView = {
       } else {
         // kleinere Punktzahl gewinnt
         // wenn Spieler gewonnen hat
-        if (playerData.win === '1') {
+        if (playerData.win === 1) {
           points = this.berPoints(play.length, weight, 100, 100, true);
         } else {
           // ansonsten halbe punkte
@@ -403,7 +433,7 @@ const HomeView = {
     // score vom sieger
     for (const gp of player) {
       // eslint-disable-next-line eqeqeq
-      if (gp.win == '1') {
+      if (gp.win === 1) {
         winPoints = Number(gp.score);
       }
     }
@@ -411,7 +441,7 @@ const HomeView = {
     // überprüfen ob der score der anderen niedrieger ist
     for (const gp of player) {
       // eslint-disable-next-line eqeqeq
-      if (gp.win !== '1' && Number(gp.score) > winPoints) {
+      if (gp.win !== 1 && Number(gp.score) > winPoints) {
         winMax = false;
       }
     }

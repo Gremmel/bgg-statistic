@@ -9,6 +9,8 @@ const express = require('./lib/express');
 const socketIo = require('./lib/socketIo');
 const logger = require('./lib/logger');
 const bgg = require('./lib/bgg');
+// eslint-disable-next-line no-undef
+const config = require(path.join(__extdir, 'config.json'));
 
 (async () => {
   try {
@@ -16,8 +18,7 @@ const bgg = require('./lib/bgg');
     // await bgg.getPlayData();
     // await bgg.getCollectionData();
     // process.exit(0);
-
-    await bgg.init();
+    await bgg.init(config);
 
     logger.debug('init express');
 

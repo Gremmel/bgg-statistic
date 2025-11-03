@@ -16,14 +16,20 @@ const bgg = {
   collectionData: {},
   calcData: {},
   local: false,
+  authorizationKey: null,
 
   async wait (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
   },
 
-  async init () {
+  async init (config) {
     return new Promise(async (resolve, reject) => {
       try {
+        this.authorizationKey = config.BGG_API_KEY;
+
+        // sicherstellen das der ordner gameData existiert
+        await fs.ensureDir(path.join(__extdir, 'gameData'));
+
         await this.loadPlayData();
         logger.info('playData lenght', this.playData.length);
 
@@ -277,7 +283,7 @@ const bgg = {
 
         while (next) {
           logger.info('read page', page);
-          const { data } = await bggClient.get('plays', { username: this.user, page, mindate });
+          const data = await bggClient.get('plays', { username: this.user, page, mindate }, { authorizationKey: this.authorizationKey });
 
           if (data && data.play) {
             this.playData = this.playData.concat(data.play);
@@ -313,7 +319,7 @@ const bgg = {
         logger.info('getCollction Data from BGG');
 
         // const { data } = await bggClient.get('user', { name: this.user });
-        const { data } = await bggClient.get('collection', { username: this.user, played: 1 }, 10);
+        const data = await bggClient.get('collection', { username: this.user, played: 1 }, { authorizationKey: this.authorizationKey });
 
         this.collectionData = data;
 
@@ -329,12 +335,24 @@ const bgg = {
 
   async getGameData (gameId) {
     return new Promise(async (resolve, reject) => {
-      try {
-        const res = await bggClient.get('thing', { id: gameId, stats: true });
+      let retry = true;
 
-        resolve(res.data);
-      } catch (error) {
-        reject(error);
+      while (retry) {
+        try {
+          const res = await bggClient.get('thing', { id: gameId, stats: true }, { authorizationKey: this.authorizationKey });
+
+          await fs.writeJSON(path.join(__extdir, 'gameData', 'game_' + gameId + '.json'), res, { spaces: 2 });
+          resolve(res);
+          retry = false;
+        } catch (error) {
+          if (error && error.message && error.message.includes('429')) {
+            logger.warn('429 Too Many Requests erhalten, warte 30 Sekunden und versuche es erneut...');
+            await this.wait(30000);
+          } else {
+            reject(error);
+            retry = false;
+          }
+        }
       }
     });
   },
@@ -443,6 +461,8 @@ const bgg = {
         for (const item of this.collectionData.item) {
           if (item.objectid === objectid) {
             this.addGameDataToCollectionItem(item, gameData);
+
+            await this.wait(1000);
 
             statistic = item.statistics;
 
@@ -557,10 +577,10 @@ const bgg = {
 
     this.findOldestCollectionItemIndex();
 
-    // if (this.local) {
-    //   logger.warn('dev umgebung -> refresh time wird auf 10s gesetzt');
-    //   ms = 10 * 1000;
-    // }
+    if (this.local) {
+      logger.warn('dev umgebung -> refresh time wird auf 10s gesetzt');
+      ms = 10 * 1000;
+    }
 
     if (this.oldCollectionEntrys) {
       logger.warn('es gibt alte Einträge -> refresh time wird auf 10s gesetzt');
@@ -575,7 +595,10 @@ const bgg = {
       refreshTime = this.calcRefreshTime();
     }
 
-    logger.warn('starte Timeout refreshTime ', refreshTime);
+    const nextRefreshDate = new Date(Date.now() + refreshTime);
+    const nextRefreshTimeString = nextRefreshDate.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+    logger.warn('starte Timeout refreshTime', refreshTime, '| nächster Refresh um', nextRefreshTimeString);
     setTimeout(() => {
       this.refreshCollectionData();
       const rtime = this.calcRefreshTime();
