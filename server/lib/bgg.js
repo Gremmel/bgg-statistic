@@ -583,8 +583,8 @@ const bgg = {
     }
 
     if (this.oldCollectionEntrys) {
-      logger.warn('es gibt alte Einträge -> refresh time wird auf 10s gesetzt');
-      ms = 10 * 1000;
+      logger.warn('es gibt alte Einträge -> refresh time wird auf 60s gesetzt');
+      ms = 60 * 1000;
     }
 
     return ms;
