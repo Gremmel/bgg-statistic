@@ -2,8 +2,10 @@
 <!-- eslint-disable vue/singleline-html-element-content-newline -->
 <template>
   <header>
-    <div data-bs-theme="dark" class="p-1 text-light bg-dark">
-      <h4 class="">Board Game Statistik</h4>
+    <div data-bs-theme="dark" class="p-1 text-light bg-dark d-flex align-items-center">
+      <a href="https://boardgamegeek.com/" target="_blank" rel="noopener" class="me-2">
+        <img src="@/assets/powered-by-bgg-reversed-rgb.svg" alt="BGG" style="height:32px;width:auto;vertical-align:middle;">
+      </a>
     </div>
   </header>
 </template>
