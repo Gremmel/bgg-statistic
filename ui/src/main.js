@@ -20,7 +20,11 @@ const app = createApp(App).use(store).use(router);
 // const socket = io('http://localhost:3000');
 
 // normal
-const socket = io();
+// const socket = io();
+
+const socket = import.meta.env.MODE === 'development' ?
+  io('http://localhost:3000') :
+  io('https://my-statistic.soseies.de');
 
 app.use(new VueSocketIO({
   debug: true,
