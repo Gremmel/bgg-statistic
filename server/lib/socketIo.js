@@ -32,7 +32,7 @@ const socketIo = {
 
     this.io = socket(this.server, {
       cors: {
-        origin: '*',
+        origin: [ 'https://my-statistic.soseies.de', 'http://localhost:8080' ],
         methods: [ 'GET', 'POST' ]
       }
     });
