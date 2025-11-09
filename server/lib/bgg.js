@@ -420,10 +420,12 @@ const bgg = {
     for (let i = 0; i < data.length; i++) {
       // wenn es noch kein datum gibt
       if (!data[i].refreshDate) {
-        logger.warn('find oldest, kein datum', data[i].name.text, data[i]);
+        logger.warn('find oldest, kein datum', data[i].name.text);
         oldestIndex = i;
 
-        break;
+        this.oldCollectionEntrys = true;
+
+        return oldestIndex;
       }
 
       if (oldestIndex === -1 || new Date(data[i].refreshDate) < new Date(data[oldestIndex].refreshDate)) {
