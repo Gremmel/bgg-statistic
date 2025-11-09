@@ -18,11 +18,11 @@ const app = createApp(App).use(store).use(router);
 
 console.log('Environment Mode:', import.meta.env.MODE);
 
-const socket = io('https://my-statistic.soseies.de');
+// const socket = io('https://my-statistic.soseies.de');
 
-// const socket = import.meta.env.MODE === 'development' ?
-//   io('http://localhost:3000') :
-//   io('https://my-statistic.soseies.de');
+const socket = import.meta.env.MODE === 'development' ?
+  io('http://localhost:3000') :
+  io('https://my-statistic.soseies.de');
 
 app.use(new VueSocketIO({
   debug: true,
