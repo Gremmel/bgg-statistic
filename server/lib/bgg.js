@@ -283,8 +283,15 @@ const bgg = {
 
         while (next) {
           logger.info('read page', page);
-          logger.warn('this.authorizationKey', this.authorizationKey);
-          const data = await bggClient.get('plays', { username: this.user, page, mindate }, { authorizationKey: this.authorizationKey });
+          const data = await bggClient.get('plays', {
+            username: this.user,
+            page,
+            mindate
+          }, {
+            authorizationKey: this.authorizationKey,
+            maxRetries: 20,
+            retryInterval: 3000
+          });
 
           if (data && data.play) {
             this.playData = this.playData.concat(data.play);
