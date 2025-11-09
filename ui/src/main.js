@@ -16,11 +16,7 @@ const app = createApp(App).use(store).use(router);
 
 // Client side Socket.IO object
 
-// dev
-// const socket = io('http://localhost:3000');
-
-// normal
-// const socket = io();
+console.log('Environment Mode:', import.meta.env.MODE);
 
 const socket = import.meta.env.MODE === 'development' ?
   io('http://localhost:3000') :
