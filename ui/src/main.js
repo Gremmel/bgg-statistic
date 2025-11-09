@@ -1,3 +1,4 @@
+/* eslint-disable no-process-env */
 import App from './App.vue';
 import { createApp } from 'vue';
 import { io } from 'socket.io-client';
@@ -16,7 +17,14 @@ const app = createApp(App).use(store).use(router);
 
 // Client side Socket.IO object
 
-const socket = io('https://my-statistic.soseies.de');
+// const socket = io('https://my-statistic.soseies.de');
+// const socket = io('http://localhost:3000');
+
+console.log('Environment Mode:', process.env.NODE_ENV);
+
+const socket = process.env.NODE_ENV === 'development' ?
+  io('http://localhost:3000') :
+  io('https://my-statistic.soseies.de');
 
 app.use(new VueSocketIO({
   debug: true,

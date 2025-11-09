@@ -373,16 +373,21 @@ const bgg = {
     // auswerten ob sich ranking geändert hat seit dem letzten mal
     if (Array.isArray(gameData.item.statistics.ratings.ranks.rank)) {
       newRanking = Number(gameData.item.statistics.ratings.ranks.rank[0].value);
+      logger.debug('neues Ranking', newRanking);
     } else {
       newRanking = Number(gameData.item.statistics.ratings.ranks.rank.value);
+      logger.debug('neues Ranking', newRanking);
     }
 
     // altes Rating
     if (collectionItem.statistics && Array.isArray(collectionItem.statistics.ratings.ranks.rank)) {
       oldRanking = Number(collectionItem.statistics.ratings.ranks.rank[0].value);
+      logger.debug('altes Ranking', oldRanking);
     } else if (collectionItem.statistics) {
       oldRanking = Number(collectionItem.statistics.ratings.ranks.rank.value);
+      logger.debug('altes Ranking', oldRanking);
     } else {
+      logger.warn('kein altes Ranking vorhanden');
       oldRanking = newRanking;
     }
 
@@ -415,7 +420,7 @@ const bgg = {
     for (let i = 0; i < data.length; i++) {
       // wenn es noch kein datum gibt
       if (!data[i].refreshDate) {
-        logger.warn('find oldest, kein datum', data[i].name.text);
+        logger.warn('find oldest, kein datum', data[i].name.text, data[i]);
         oldestIndex = i;
 
         break;
@@ -426,7 +431,7 @@ const bgg = {
       }
     }
 
-    logger.warn('find oldest: ', data[oldestIndex].refreshDate);
+    logger.info('find oldest: ', data[oldestIndex].refreshDate, data[oldestIndex].name.text);
 
     // Aktuelles Datum
     const currentDate = new Date();
@@ -446,7 +451,7 @@ const bgg = {
       logger.warn('Das Datum ist älter als 8 Tage.', diffInDays);
     } else {
       this.oldCollectionEntrys = false;
-      logger.warn('Das Datum ist nicht älter als 8 Tage.', diffInDays);
+      logger.info('Das Datum ist nicht älter als 8 Tage.', diffInDays);
     }
 
     return oldestIndex;
@@ -476,7 +481,7 @@ const bgg = {
 
             await this.writeCollectionDataToFile(true);
 
-            logger.info('added');
+            logger.info('statistic hinzugefügt für ', item.name.text);
 
             break;
           }
@@ -487,9 +492,11 @@ const bgg = {
     }
 
     // überprüfen ob es noch spiele in der sammlung ohne statistic gibt
+    let countMissingStatistics = 0;
+
     for (const item of this.collectionData.item) {
       if (!item.statistics) {
-        logger.info('keine statistic in ', item.name.text);
+        logger.warn('keine statistic in ', item.name.text);
 
         // daten abrufen
         const gameData = await this.getGameData(item.objectid);
@@ -500,14 +507,21 @@ const bgg = {
 
           await this.writeCollectionDataToFile(true);
 
-          logger.info('added');
+          logger.info('statitic hinzugefügt für ', item.name.text);
+          countMissingStatistics += 1;
         }
 
-        break;
+        // nach dem hinzufügen von 5 einträgen den durchlauf beenden
+        if (countMissingStatistics >= 5) {
+          logger.warn('5 fehlende statistics hinzugefügt, beende durchlauf');
+          break;
+        }
       }
     }
 
     // überprüfen ob es noch spiele in der sammlung ohne poll gibt
+    let countMissingPolls = 0;
+
     for (const item of this.collectionData.item) {
       if (!item.poll) {
         logger.info('keine poll in ', item.name.text);
@@ -521,17 +535,24 @@ const bgg = {
 
           await this.writeCollectionDataToFile(true);
 
-          logger.info('added');
+          logger.info('poll hinzugefügt für ', item.name.text);
+          countMissingPolls += 1;
         }
 
-        break;
+        // nach dem hinzufügen von 5 einträgen den durchlauf beenden
+        if (countMissingPolls >= 5) {
+          logger.warn('5 fehlende polls hinzugefügt, beende durchlauf');
+          break;
+        }
       }
     }
 
     // überprüfen ob es noch spiele in der sammlung refresh Datum gibt
+    let countMissingRefreshDate = 0;
+
     for (const item of this.collectionData.item) {
       if (!item.refreshDate) {
-        logger.info('keine refreshDate in ', item.name.text);
+        logger.warn('keine refreshDate in ', item.name.text);
 
         // daten abrufen
         const gameData = await this.getGameData(item.objectid);
@@ -542,15 +563,21 @@ const bgg = {
 
           await this.writeCollectionDataToFile(true);
 
-          logger.info('added');
+          logger.info('refreshDate und statistik hinzugefügt für ', item.name.text);
+          countMissingRefreshDate += 1;
         }
 
-        break;
+        // nach dem hinzufügen von 5 einträgen den durchlauf beenden
+        if (countMissingRefreshDate >= 5) {
+          logger.warn('5 fehlende refreshDate hinzugefügt, beende durchlauf');
+          break;
+        }
       }
     }
 
     // den ältesten Eintrag aktuallisieren
     if (!objectid) {
+      logger.info('aktuallisiere ältesten Eintrag der Collection');
       const oldestCollectionItemIndex = this.findOldestCollectionItemIndex();
       const collectionItem = this.collectionData.item[oldestCollectionItemIndex];
 
@@ -566,7 +593,7 @@ const bgg = {
 
           await this.writeCollectionDataToFile(true);
 
-          logger.info('added');
+          logger.info('aktuallisiert für ', collectionItem.name.text);
         }
       }
     }
@@ -591,8 +618,8 @@ const bgg = {
     }
 
     if (this.oldCollectionEntrys) {
-      logger.warn('es gibt alte Einträge -> refresh time wird auf 60s gesetzt');
-      ms = 60 * 1000;
+      logger.warn('es gibt alte Einträge -> refresh time wird auf 10s gesetzt');
+      ms = 10 * 1000;
     }
 
     return ms;
@@ -606,7 +633,7 @@ const bgg = {
     const nextRefreshDate = new Date(Date.now() + refreshTime);
     const nextRefreshTimeString = nextRefreshDate.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
-    logger.warn('starte Timeout refreshTime', refreshTime, '| nächster Refresh um', nextRefreshTimeString);
+    logger.info('starte Timeout refreshTime', refreshTime, '| nächster Refresh um', nextRefreshTimeString);
     setTimeout(() => {
       this.refreshCollectionData();
       const rtime = this.calcRefreshTime();

@@ -32,8 +32,10 @@ const socketIo = {
 
     this.io = socket(this.server, {
       cors: {
-        origin: [ 'https://my-statistic.soseies.de', 'http://localhost:8080' ],
-        methods: [ 'GET', 'POST' ]
+        origin: [ 'https://my-statistic.soseies.de', 'http://localhost:3000', 'http://localhost:8080', 'http://localhost:8082' ],
+        methods: [ 'GET', 'POST' ],
+        allowedHeaders: [ 'my-custom-header' ],
+        credentials: true
       }
     });
 
