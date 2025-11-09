@@ -295,9 +295,8 @@
             {{ statistic.countRatedPlays }}
           </div>
         </div>
-        <div class="row text-dark">
-          <!-- treppchen -->
-          <div class="treppe">
+        <div class="d-flex text-dark justify-content-center align-items-center flex-column" style="min-height: 350px;">
+          <div class="treppe mb-4" style="max-width: 500px; width: 100%;">
             <img
               src="treppchen.jpg"
               alt="siegertreppe"
@@ -341,9 +340,8 @@
               {{ ratedPlayers[2].points }} ({{ ratedPlayers[2].win }})
             </span>
           </div>
-          <!-- der rest -->
-          <div>
-            <table class="table text-light">
+          <div style="width: 100%; max-width: 400px;">
+            <table class="table text-light mb-0">
               <tbody>
                 <tr
                   v-for="player in restOfPlayers"
