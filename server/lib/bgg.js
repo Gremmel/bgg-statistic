@@ -283,6 +283,7 @@ const bgg = {
 
         while (next) {
           logger.info('read page', page);
+          logger.warn('this.authorizationKey', this.authorizationKey);
           const data = await bggClient.get('plays', { username: this.user, page, mindate }, { authorizationKey: this.authorizationKey });
 
           if (data && data.play) {
