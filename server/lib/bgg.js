@@ -327,7 +327,7 @@ const bgg = {
         logger.info('getCollction Data from BGG');
 
         // const { data } = await bggClient.get('user', { name: this.user });
-        const data = await bggClient.get('collection', { username: this.user, played: 1 }, { authorizationKey: this.authorizationKey });
+        const data = await bggClient.get('collection', { username: this.user }, { authorizationKey: this.authorizationKey });
 
         this.collectionData = data;
 
@@ -518,6 +518,8 @@ const bgg = {
           logger.warn('5 fehlende statistics hinzugefügt, beende durchlauf');
           break;
         }
+
+        await this.wait(1000);
       }
     }
 
@@ -546,6 +548,8 @@ const bgg = {
           logger.warn('5 fehlende polls hinzugefügt, beende durchlauf');
           break;
         }
+
+        await this.wait(1000);
       }
     }
 
@@ -574,6 +578,8 @@ const bgg = {
           logger.warn('5 fehlende refreshDate hinzugefügt, beende durchlauf');
           break;
         }
+
+        await this.wait(1000);
       }
     }
 

@@ -222,7 +222,7 @@
                   {{ play.date }}
                 </div>
                 <div class="col">
-                  {{ play.length }} min
+                  {{ Math.floor(play.length / 60) }}:{{ (play.length % 60).toString().padStart(2, '0') }} h
                 </div>
               </div>
               <div class="row">
